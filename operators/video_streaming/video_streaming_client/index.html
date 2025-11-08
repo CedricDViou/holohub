@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://nvidia-holoscan.github.io/holohub/applications/video_streaming_demo_enhanced/">
+        <link rel="canonical" href="https://nvidia-holoscan.github.io/holohub/operators/video_streaming/video_streaming_client/">
       
       
-        <link rel="prev" href="../psd_pipeline/data_writer/">
+        <link rel="prev" href="../video_streaming_server/">
       
       
-        <link rel="next" href="video_streaming_demo_client/">
+        <link rel="next" href="../../volume_loader/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
-        <title>Video Streaming Demo Enhanced (latest) - NVIDIA Holoscan Reference Applications</title>
+        <title>VideoStreamingClientOp (latest) - NVIDIA Holoscan Reference Applications</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,17 +48,17 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="../../assets/css/color-schemes.css">
+      <link rel="stylesheet" href="../../../assets/css/color-schemes.css">
     
-      <link rel="stylesheet" href="../../assets/css/fonts.css">
+      <link rel="stylesheet" href="../../../assets/css/fonts.css">
     
-      <link rel="stylesheet" href="../../assets/css/custom-material.css">
+      <link rel="stylesheet" href="../../../assets/css/custom-material.css">
     
-      <link rel="stylesheet" href="../../assets/css/jupyter-themes.css">
+      <link rel="stylesheet" href="../../../assets/css/jupyter-themes.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#video-streaming-demo-enhanced" class="md-skip">
+        <a href="#streamingclient-operator" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="NVIDIA Holoscan Reference Applications" class="md-header__button md-logo" aria-label="NVIDIA Holoscan Reference Applications" data-md-component="logo">
+    <a href="../../.." title="NVIDIA Holoscan Reference Applications" class="md-header__button md-logo" aria-label="NVIDIA Holoscan Reference Applications" data-md-component="logo">
       
   
   <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -140,7 +140,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Video Streaming Demo Enhanced (latest)
+              VideoStreamingClientOp (latest)
             
           </span>
         </div>
@@ -253,7 +253,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -274,7 +274,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../workflows/" class="md-tabs__link">
+        <a href="../../../workflows/" class="md-tabs__link">
           
   
   
@@ -292,13 +292,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../applications/" class="md-tabs__link">
           
   
   
@@ -316,11 +314,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../operators/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -342,7 +342,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../tutorials/" class="md-tabs__link">
+        <a href="../../../tutorials/" class="md-tabs__link">
           
   
   
@@ -364,7 +364,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../benchmarks/" class="md-tabs__link">
+        <a href="../../../benchmarks/" class="md-tabs__link">
           
   
   
@@ -400,7 +400,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="NVIDIA Holoscan Reference Applications" class="md-nav__button md-logo" aria-label="NVIDIA Holoscan Reference Applications" data-md-component="logo">
+    <a href="../../.." title="NVIDIA Holoscan Reference Applications" class="md-nav__button md-logo" aria-label="NVIDIA Holoscan Reference Applications" data-md-component="logo">
       
   
   <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -438,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -483,7 +483,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../workflows/" class="md-nav__link ">
+            <a href="../../../workflows/" class="md-nav__link ">
               
   
   
@@ -539,7 +539,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../workflows/ai_surgical_video/" class="md-nav__link ">
+            <a href="../../../workflows/ai_surgical_video/" class="md-nav__link ">
               
   
   
@@ -581,8 +581,6 @@
       
   
   
-    
-  
   
   
     
@@ -734,27 +732,22 @@
       
         
       
-        
-      
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../../applications/" class="md-nav__link ">
               
   
   
@@ -767,13 +760,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Applications
@@ -810,7 +803,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../adv_networking_bench/" class="md-nav__link ">
+            <a href="../../../applications/adv_networking_bench/" class="md-nav__link ">
               
   
   
@@ -869,7 +862,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../aja_video_capture/" class="md-nav__link ">
+            <a href="../../../applications/aja_video_capture/" class="md-nav__link ">
               
   
   
@@ -928,7 +921,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../async_buffer_deadline/" class="md-nav__link ">
+            <a href="../../../applications/async_buffer_deadline/" class="md-nav__link ">
               
   
   
@@ -987,7 +980,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../basic_networking_ping/" class="md-nav__link ">
+            <a href="../../../applications/basic_networking_ping/" class="md-nav__link ">
               
   
   
@@ -1046,7 +1039,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../simple_pdw_pipeline/" class="md-nav__link ">
+            <a href="../../../applications/simple_pdw_pipeline/" class="md-nav__link ">
               
   
   
@@ -1105,7 +1098,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../body_pose_estimation/" class="md-nav__link ">
+            <a href="../../../applications/body_pose_estimation/" class="md-nav__link ">
               
   
   
@@ -1164,7 +1157,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../colonoscopy_segmentation/" class="md-nav__link ">
+            <a href="../../../applications/colonoscopy_segmentation/" class="md-nav__link ">
               
   
   
@@ -1223,7 +1216,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../cuda_quantum/" class="md-nav__link ">
+            <a href="../../../applications/cuda_quantum/" class="md-nav__link ">
               
   
   
@@ -1327,7 +1320,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../dds/dds_video/" class="md-nav__link ">
+            <a href="../../../applications/dds/dds_video/" class="md-nav__link ">
               
   
   
@@ -1394,7 +1387,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../deltacast_transmitter/" class="md-nav__link ">
+            <a href="../../../applications/deltacast_transmitter/" class="md-nav__link ">
               
   
   
@@ -1453,7 +1446,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../depth_anything_v2/" class="md-nav__link ">
+            <a href="../../../applications/depth_anything_v2/" class="md-nav__link ">
               
   
   
@@ -1606,7 +1599,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../distributed/grpc/grpc_endoscopy_tool_tracking/" class="md-nav__link ">
+            <a href="../../../applications/distributed/grpc/grpc_endoscopy_tool_tracking/" class="md-nav__link ">
               
   
   
@@ -1665,7 +1658,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../distributed/grpc/grpc_h264_endoscopy_tool_tracking/" class="md-nav__link ">
+            <a href="../../../applications/distributed/grpc/grpc_h264_endoscopy_tool_tracking/" class="md-nav__link ">
               
   
   
@@ -1779,7 +1772,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../distributed/ucx/ucx_h264_endoscopy_tool_tracking/" class="md-nav__link ">
+            <a href="../../../applications/distributed/ucx/ucx_h264_endoscopy_tool_tracking/" class="md-nav__link ">
               
   
   
@@ -1842,7 +1835,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../distributed/ucx/ucx_endoscopy_tool_tracking/" class="md-nav__link ">
+            <a href="../../../applications/distributed/ucx/ucx_endoscopy_tool_tracking/" class="md-nav__link ">
               
   
   
@@ -1898,7 +1891,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../distributed/ucx/ucx_endoscopy_tool_tracking/cpp/" class="md-nav__link ">
+            <a href="../../../applications/distributed/ucx/ucx_endoscopy_tool_tracking/cpp/" class="md-nav__link ">
               
   
   
@@ -1957,7 +1950,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../distributed/ucx/ucx_endoscopy_tool_tracking/python/" class="md-nav__link ">
+            <a href="../../../applications/distributed/ucx/ucx_endoscopy_tool_tracking/python/" class="md-nav__link ">
               
   
   
@@ -2087,7 +2080,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../ehr_query_llm/lmm/" class="md-nav__link ">
+            <a href="../../../applications/ehr_query_llm/lmm/" class="md-nav__link ">
               
   
   
@@ -2146,7 +2139,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../ehr_query_llm/fhir/" class="md-nav__link ">
+            <a href="../../../applications/ehr_query_llm/fhir/" class="md-nav__link ">
               
   
   
@@ -2213,7 +2206,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../endoscopy_depth_estimation/" class="md-nav__link ">
+            <a href="../../../applications/endoscopy_depth_estimation/" class="md-nav__link ">
               
   
   
@@ -2276,7 +2269,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../endoscopy_out_of_body_detection/" class="md-nav__link ">
+            <a href="../../../applications/endoscopy_out_of_body_detection/" class="md-nav__link ">
               
   
   
@@ -2332,7 +2325,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../endoscopy_out_of_body_detection/cpp/" class="md-nav__link ">
+            <a href="../../../applications/endoscopy_out_of_body_detection/cpp/" class="md-nav__link ">
               
   
   
@@ -2391,7 +2384,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../endoscopy_out_of_body_detection/python/" class="md-nav__link ">
+            <a href="../../../applications/endoscopy_out_of_body_detection/python/" class="md-nav__link ">
               
   
   
@@ -2458,7 +2451,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../monai_endoscopic_tool_seg/" class="md-nav__link ">
+            <a href="../../../applications/monai_endoscopic_tool_seg/" class="md-nav__link ">
               
   
   
@@ -2521,7 +2514,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../endoscopy_tool_tracking/" class="md-nav__link ">
+            <a href="../../../applications/endoscopy_tool_tracking/" class="md-nav__link ">
               
   
   
@@ -2577,7 +2570,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../endoscopy_tool_tracking/cpp/" class="md-nav__link ">
+            <a href="../../../applications/endoscopy_tool_tracking/cpp/" class="md-nav__link ">
               
   
   
@@ -2636,7 +2629,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../endoscopy_tool_tracking/python/" class="md-nav__link ">
+            <a href="../../../applications/endoscopy_tool_tracking/python/" class="md-nav__link ">
               
   
   
@@ -2703,7 +2696,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../florence-2-vision/" class="md-nav__link ">
+            <a href="../../../applications/florence-2-vision/" class="md-nav__link ">
               
   
   
@@ -2762,7 +2755,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../fm_asr/" class="md-nav__link ">
+            <a href="../../../applications/fm_asr/" class="md-nav__link ">
               
   
   
@@ -2821,7 +2814,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../orthorectification_with_optix/" class="md-nav__link ">
+            <a href="../../../applications/orthorectification_with_optix/" class="md-nav__link ">
               
   
   
@@ -2927,7 +2920,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../h264/h264_endoscopy_tool_tracking/" class="md-nav__link ">
+            <a href="../../../applications/h264/h264_endoscopy_tool_tracking/" class="md-nav__link ">
               
   
   
@@ -2986,7 +2979,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../h264/h264_video_decode/" class="md-nav__link ">
+            <a href="../../../applications/h264/h264_video_decode/" class="md-nav__link ">
               
   
   
@@ -3057,7 +3050,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../high_speed_endoscopy/" class="md-nav__link ">
+            <a href="../../../applications/high_speed_endoscopy/" class="md-nav__link ">
               
   
   
@@ -3113,7 +3106,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../high_speed_endoscopy/cpp/" class="md-nav__link ">
+            <a href="../../../applications/high_speed_endoscopy/cpp/" class="md-nav__link ">
               
   
   
@@ -3172,7 +3165,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../high_speed_endoscopy/python/" class="md-nav__link ">
+            <a href="../../../applications/high_speed_endoscopy/python/" class="md-nav__link ">
               
   
   
@@ -3239,7 +3232,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../holochat/" class="md-nav__link ">
+            <a href="../../../applications/holochat/" class="md-nav__link ">
               
   
   
@@ -3345,7 +3338,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../holoscan_ros2/pubsub/" class="md-nav__link ">
+            <a href="../../../applications/holoscan_ros2/pubsub/" class="md-nav__link ">
               
   
   
@@ -3404,7 +3397,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../holoscan_ros2/vb1940/" class="md-nav__link ">
+            <a href="../../../applications/holoscan_ros2/vb1940/" class="md-nav__link ">
               
   
   
@@ -3524,7 +3517,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../holoviz/holoviz_hdr/" class="md-nav__link ">
+            <a href="../../../applications/holoviz/holoviz_hdr/" class="md-nav__link ">
               
   
   
@@ -3583,7 +3576,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../holoviz/holoviz_srgb/" class="md-nav__link ">
+            <a href="../../../applications/holoviz/holoviz_srgb/" class="md-nav__link ">
               
   
   
@@ -3642,7 +3635,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../holoviz/holoviz_ui/" class="md-nav__link ">
+            <a href="../../../applications/holoviz/holoviz_ui/" class="md-nav__link ">
               
   
   
@@ -3701,7 +3694,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../holoviz/holoviz_vsync/" class="md-nav__link ">
+            <a href="../../../applications/holoviz/holoviz_vsync/" class="md-nav__link ">
               
   
   
@@ -3760,7 +3753,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../holoviz/holoviz_yuv/" class="md-nav__link ">
+            <a href="../../../applications/holoviz/holoviz_yuv/" class="md-nav__link ">
               
   
   
@@ -3827,7 +3820,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../hyperspectral_segmentation/" class="md-nav__link ">
+            <a href="../../../applications/hyperspectral_segmentation/" class="md-nav__link ">
               
   
   
@@ -3886,7 +3879,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../imaging_ai_segmentator/" class="md-nav__link ">
+            <a href="../../../applications/imaging_ai_segmentator/" class="md-nav__link ">
               
   
   
@@ -3945,7 +3938,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../iio/" class="md-nav__link ">
+            <a href="../../../applications/iio/" class="md-nav__link ">
               
   
   
@@ -4004,7 +3997,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../realsense_visualizer/" class="md-nav__link ">
+            <a href="../../../applications/realsense_visualizer/" class="md-nav__link ">
               
   
   
@@ -4063,7 +4056,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../isaac_sim_holoscan_bridge/" class="md-nav__link ">
+            <a href="../../../applications/isaac_sim_holoscan_bridge/" class="md-nav__link ">
               
   
   
@@ -4171,7 +4164,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../laser_detection_latency/evt_cam_calibration/" class="md-nav__link ">
+            <a href="../../../applications/laser_detection_latency/evt_cam_calibration/" class="md-nav__link ">
               
   
   
@@ -4230,7 +4223,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../laser_detection_latency/laser_detection/" class="md-nav__link ">
+            <a href="../../../applications/laser_detection_latency/laser_detection/" class="md-nav__link ">
               
   
   
@@ -4289,7 +4282,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../laser_detection_latency/usb_cam_calibration/" class="md-nav__link ">
+            <a href="../../../applications/laser_detection_latency/usb_cam_calibration/" class="md-nav__link ">
               
   
   
@@ -4403,7 +4396,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../matlab_gpu_coder/matlab_image_processing/" class="md-nav__link ">
+            <a href="../../../applications/matlab_gpu_coder/matlab_image_processing/" class="md-nav__link ">
               
   
   
@@ -4462,7 +4455,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../matlab_gpu_coder/matlab_beamform/" class="md-nav__link ">
+            <a href="../../../applications/matlab_gpu_coder/matlab_beamform/" class="md-nav__link ">
               
   
   
@@ -4533,7 +4526,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../volume_rendering_xr/" class="md-nav__link ">
+            <a href="../../../applications/volume_rendering_xr/" class="md-nav__link ">
               
   
   
@@ -4640,7 +4633,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../volume_rendering_xr/operators/XrTransformOp/" class="md-nav__link ">
+            <a href="../../../applications/volume_rendering_xr/operators/XrTransformOp/" class="md-nav__link ">
               
   
   
@@ -4696,7 +4689,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../volume_rendering_xr/operators/XrTransformOp/XrTransformControlOp/" class="md-nav__link ">
+            <a href="../../../applications/volume_rendering_xr/operators/XrTransformOp/XrTransformControlOp/" class="md-nav__link ">
               
   
   
@@ -4755,7 +4748,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../volume_rendering_xr/operators/XrTransformOp/XrTransformRenderOp/" class="md-nav__link ">
+            <a href="../../../applications/volume_rendering_xr/operators/XrTransformOp/XrTransformRenderOp/" class="md-nav__link ">
               
   
   
@@ -4828,7 +4821,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../volume_rendering_xr/operators/XrFrameOp/" class="md-nav__link ">
+            <a href="../../../applications/volume_rendering_xr/operators/XrFrameOp/" class="md-nav__link ">
               
   
   
@@ -4884,7 +4877,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../volume_rendering_xr/operators/XrFrameOp/convert_depth/" class="md-nav__link ">
+            <a href="../../../applications/volume_rendering_xr/operators/XrFrameOp/convert_depth/" class="md-nav__link ">
               
   
   
@@ -4943,7 +4936,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../volume_rendering_xr/operators/XrFrameOp/begin_frame/" class="md-nav__link ">
+            <a href="../../../applications/volume_rendering_xr/operators/XrFrameOp/begin_frame/" class="md-nav__link ">
               
   
   
@@ -5002,7 +4995,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../volume_rendering_xr/operators/XrFrameOp/end_frame/" class="md-nav__link ">
+            <a href="../../../applications/volume_rendering_xr/operators/XrFrameOp/end_frame/" class="md-nav__link ">
               
   
   
@@ -5124,7 +5117,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../volume_rendering_xr/utils/xr_hello_holoscan/" class="md-nav__link ">
+            <a href="../../../applications/volume_rendering_xr/utils/xr_hello_holoscan/" class="md-nav__link ">
               
   
   
@@ -5180,7 +5173,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../volume_rendering_xr/utils/xr_hello_holoscan/xr_basic_render/" class="md-nav__link ">
+            <a href="../../../applications/volume_rendering_xr/utils/xr_hello_holoscan/xr_basic_render/" class="md-nav__link ">
               
   
   
@@ -5263,7 +5256,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../multiai_endoscopy/" class="md-nav__link ">
+            <a href="../../../applications/multiai_endoscopy/" class="md-nav__link ">
               
   
   
@@ -5328,7 +5321,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../multiai_ultrasound/" class="md-nav__link ">
+            <a href="../../../applications/multiai_ultrasound/" class="md-nav__link ">
               
   
   
@@ -5384,7 +5377,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../multiai_ultrasound/cpp/" class="md-nav__link ">
+            <a href="../../../applications/multiai_ultrasound/cpp/" class="md-nav__link ">
               
   
   
@@ -5443,7 +5436,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../multiai_ultrasound/python/" class="md-nav__link ">
+            <a href="../../../applications/multiai_ultrasound/python/" class="md-nav__link ">
               
   
   
@@ -5547,7 +5540,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../multiai_ultrasound/operators/visualizer_icardio/" class="md-nav__link ">
+            <a href="../../../applications/multiai_ultrasound/operators/visualizer_icardio/" class="md-nav__link ">
               
   
   
@@ -5671,7 +5664,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../nvidia_nim/nvidia_nim_chat/" class="md-nav__link ">
+            <a href="../../../applications/nvidia_nim/nvidia_nim_chat/" class="md-nav__link ">
               
   
   
@@ -5730,7 +5723,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../nvidia_nim/nvidia_nim_imaging/" class="md-nav__link ">
+            <a href="../../../applications/nvidia_nim/nvidia_nim_imaging/" class="md-nav__link ">
               
   
   
@@ -5789,7 +5782,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../nvidia_nim/nvidia_nim_nvclip/" class="md-nav__link ">
+            <a href="../../../applications/nvidia_nim/nvidia_nim_nvclip/" class="md-nav__link ">
               
   
   
@@ -5905,7 +5898,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../nvidia_video_codec/nvc_encode_decode/" class="md-nav__link ">
+            <a href="../../../applications/nvidia_video_codec/nvc_encode_decode/" class="md-nav__link ">
               
   
   
@@ -5964,7 +5957,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../nvidia_video_codec/nvc_decode/" class="md-nav__link ">
+            <a href="../../../applications/nvidia_video_codec/nvc_decode/" class="md-nav__link ">
               
   
   
@@ -6023,7 +6016,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../nvidia_video_codec/nvc_encode_writer/" class="md-nav__link ">
+            <a href="../../../applications/nvidia_video_codec/nvc_encode_writer/" class="md-nav__link ">
               
   
   
@@ -6090,7 +6083,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../object_detection_torch/" class="md-nav__link ">
+            <a href="../../../applications/object_detection_torch/" class="md-nav__link ">
               
   
   
@@ -6149,7 +6142,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../openigtlink_3dslicer/" class="md-nav__link ">
+            <a href="../../../applications/openigtlink_3dslicer/" class="md-nav__link ">
               
   
   
@@ -6257,7 +6250,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../orsi/orsi_in_out_body/" class="md-nav__link ">
+            <a href="../../../applications/orsi/orsi_in_out_body/" class="md-nav__link ">
               
   
   
@@ -6316,7 +6309,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../orsi/orsi_multi_ai_ar/" class="md-nav__link ">
+            <a href="../../../applications/orsi/orsi_multi_ai_ar/" class="md-nav__link ">
               
   
   
@@ -6375,7 +6368,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../orsi/orsi_segmentation_ar/" class="md-nav__link ">
+            <a href="../../../applications/orsi/orsi_segmentation_ar/" class="md-nav__link ">
               
   
   
@@ -6442,7 +6435,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../polyp_detection/" class="md-nav__link ">
+            <a href="../../../applications/polyp_detection/" class="md-nav__link ">
               
   
   
@@ -6501,7 +6494,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../cunumeric_integration/" class="md-nav__link ">
+            <a href="../../../applications/cunumeric_integration/" class="md-nav__link ">
               
   
   
@@ -6560,7 +6553,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../prohawk_video_replayer/" class="md-nav__link ">
+            <a href="../../../applications/prohawk_video_replayer/" class="md-nav__link ">
               
   
   
@@ -6619,7 +6612,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../pva_video_filter/" class="md-nav__link ">
+            <a href="../../../applications/pva_video_filter/" class="md-nav__link ">
               
   
   
@@ -6678,7 +6671,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../qt_video_replayer/" class="md-nav__link ">
+            <a href="../../../applications/qt_video_replayer/" class="md-nav__link ">
               
   
   
@@ -6737,7 +6730,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../network_radar_pipeline/" class="md-nav__link ">
+            <a href="../../../applications/network_radar_pipeline/" class="md-nav__link ">
               
   
   
@@ -6796,7 +6789,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../video_deidentification/" class="md-nav__link ">
+            <a href="../../../applications/video_deidentification/" class="md-nav__link ">
               
   
   
@@ -6855,7 +6848,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../asr_to_llm/" class="md-nav__link ">
+            <a href="../../../applications/asr_to_llm/" class="md-nav__link ">
               
   
   
@@ -6914,7 +6907,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../sam2/" class="md-nav__link ">
+            <a href="../../../applications/sam2/" class="md-nav__link ">
               
   
   
@@ -6973,7 +6966,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../cvcuda_basic/" class="md-nav__link ">
+            <a href="../../../applications/cvcuda_basic/" class="md-nav__link ">
               
   
   
@@ -7079,7 +7072,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../simple_radar_pipeline/cpp/" class="md-nav__link ">
+            <a href="../../../applications/simple_radar_pipeline/cpp/" class="md-nav__link ">
               
   
   
@@ -7138,7 +7131,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../simple_radar_pipeline/python/" class="md-nav__link ">
+            <a href="../../../applications/simple_radar_pipeline/python/" class="md-nav__link ">
               
   
   
@@ -7252,7 +7245,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../slang/slang_gamma_correction/" class="md-nav__link ">
+            <a href="../../../applications/slang/slang_gamma_correction/" class="md-nav__link ">
               
   
   
@@ -7311,7 +7304,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../slang/slang_simple/" class="md-nav__link ">
+            <a href="../../../applications/slang/slang_simple/" class="md-nav__link ">
               
   
   
@@ -7378,7 +7371,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../sdr_fm_demodulation/" class="md-nav__link ">
+            <a href="../../../applications/sdr_fm_demodulation/" class="md-nav__link ">
               
   
   
@@ -7437,7 +7430,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../speech_to_text_llm/" class="md-nav__link ">
+            <a href="../../../applications/speech_to_text_llm/" class="md-nav__link ">
               
   
   
@@ -7496,7 +7489,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../ssd_detection_endoscopy_tools/" class="md-nav__link ">
+            <a href="../../../applications/ssd_detection_endoscopy_tools/" class="md-nav__link ">
               
   
   
@@ -7555,7 +7548,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../stereo_vision/" class="md-nav__link ">
+            <a href="../../../applications/stereo_vision/" class="md-nav__link ">
               
   
   
@@ -7614,7 +7607,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../synthetic_aperture_radar/" class="md-nav__link ">
+            <a href="../../../applications/synthetic_aperture_radar/" class="md-nav__link ">
               
   
   
@@ -7673,7 +7666,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../tao_peoplenet/" class="md-nav__link ">
+            <a href="../../../applications/tao_peoplenet/" class="md-nav__link ">
               
   
   
@@ -7736,7 +7729,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../ultrasound_segmentation/" class="md-nav__link ">
+            <a href="../../../applications/ultrasound_segmentation/" class="md-nav__link ">
               
   
   
@@ -7792,7 +7785,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../ultrasound_segmentation/cpp/" class="md-nav__link ">
+            <a href="../../../applications/ultrasound_segmentation/cpp/" class="md-nav__link ">
               
   
   
@@ -7851,7 +7844,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../ultrasound_segmentation/python/" class="md-nav__link ">
+            <a href="../../../applications/ultrasound_segmentation/python/" class="md-nav__link ">
               
   
   
@@ -7918,7 +7911,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../velodyne_lidar_app/" class="md-nav__link ">
+            <a href="../../../applications/velodyne_lidar_app/" class="md-nav__link ">
               
   
   
@@ -7977,7 +7970,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../vila_live/" class="md-nav__link ">
+            <a href="../../../applications/vila_live/" class="md-nav__link ">
               
   
   
@@ -8038,7 +8031,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../psd_pipeline/" class="md-nav__link ">
+            <a href="../../../applications/psd_pipeline/" class="md-nav__link ">
               
   
   
@@ -8094,7 +8087,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../psd_pipeline/data_writer/" class="md-nav__link ">
+            <a href="../../../applications/psd_pipeline/data_writer/" class="md-nav__link ">
               
   
   
@@ -8137,8 +8130,6 @@
                 
   
   
-    
-  
   
   
     
@@ -8159,20 +8150,20 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_64" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_64" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../../applications/video_streaming/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    Video Streaming Demo Enhanced
+    Video Streaming Demo
     
   </span>
   
@@ -8180,16 +8171,16 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_3_64" id="__nav_3_64_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3_64" id="__nav_3_64_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_64_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_64_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_64">
             <span class="md-nav__icon md-icon"></span>
-            Video Streaming Demo Enhanced
+            Video Streaming Demo
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8223,12 +8214,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="video_streaming_demo_client/" class="md-nav__link ">
+            <a href="../../../applications/video_streaming/video_streaming_client/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    Video Streaming Demo Client Enhanced
+    Video Streaming Client Demo
     
   </span>
   
@@ -8240,7 +8231,7 @@
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_64_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_64_2">
             <span class="md-nav__icon md-icon"></span>
-            Video Streaming Demo Client Enhanced
+            Video Streaming Client Demo
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8282,12 +8273,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="video_streaming_demo_server/" class="md-nav__link ">
+            <a href="../../../applications/video_streaming/video_streaming_server/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    Video Streaming Demo Server Enhanced
+    Video Streaming Server Demo
     
   </span>
   
@@ -8299,7 +8290,7 @@
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_64_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_64_3">
             <span class="md-nav__icon md-icon"></span>
-            Video Streaming Demo Server Enhanced
+            Video Streaming Server Demo
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8331,7 +8322,7 @@
     
       
         
-      
+          
         
       
     
@@ -8348,142 +8339,28 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_65" >
         
           
-          <label class="md-nav__link" for="__nav_3_65" id="__nav_3_65_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../applications/volume_rendering/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
-    Video streaming
+    Volume rendering using ClaraViz
     
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_65_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_65">
             <span class="md-nav__icon md-icon"></span>
-            Video streaming
+            Volume rendering using ClaraViz
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_65_1" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../video_streaming/video_streaming_client/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    Video Streaming Client
-    
-  </span>
-  
-
-            </a>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_65_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_65_1">
-            <span class="md-nav__icon md-icon"></span>
-            Video Streaming Client
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_65_2" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../video_streaming/video_streaming_server/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    Video Streaming Server
-    
-  </span>
-  
-
-            </a>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_65_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_65_2">
-            <span class="md-nav__icon md-icon"></span>
-            Video Streaming Server
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
               
             
           </ul>
@@ -8522,12 +8399,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../volume_rendering/" class="md-nav__link ">
+            <a href="../../../applications/vpi_stereo/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    Volume rendering using ClaraViz
+    VPI Stereo Vision
     
   </span>
   
@@ -8539,7 +8416,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_66_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_66">
             <span class="md-nav__icon md-icon"></span>
-            Volume rendering using ClaraViz
+            VPI Stereo Vision
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8581,12 +8458,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../vpi_stereo/" class="md-nav__link ">
+            <a href="../../../applications/webrtc_holoviz_server/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    VPI Stereo Vision
+    WebRTC Holoviz Server
     
   </span>
   
@@ -8598,7 +8475,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_67_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_67">
             <span class="md-nav__icon md-icon"></span>
-            VPI Stereo Vision
+            WebRTC Holoviz Server
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8640,12 +8517,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../webrtc_holoviz_server/" class="md-nav__link ">
+            <a href="../../../applications/webrtc_video_client/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    WebRTC Holoviz Server
+    WebRTC Video Client
     
   </span>
   
@@ -8657,7 +8534,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_68_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_68">
             <span class="md-nav__icon md-icon"></span>
-            WebRTC Holoviz Server
+            WebRTC Video Client
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8699,12 +8576,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../webrtc_video_client/" class="md-nav__link ">
+            <a href="../../../applications/webrtc_video_server/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    WebRTC Video Client
+    WebRTC Video Server
     
   </span>
   
@@ -8716,7 +8593,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_69_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_69">
             <span class="md-nav__icon md-icon"></span>
-            WebRTC Video Client
+            WebRTC Video Server
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8758,12 +8635,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../webrtc_video_server/" class="md-nav__link ">
+            <a href="../../../applications/xr_gsplat/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    WebRTC Video Server
+    XR + Gaussian Splatting
     
   </span>
   
@@ -8775,7 +8652,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_70_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_70">
             <span class="md-nav__icon md-icon"></span>
-            WebRTC Video Server
+            XR + Gaussian Splatting
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8817,12 +8694,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../xr_gsplat/" class="md-nav__link ">
+            <a href="../../../applications/xr_holoviz/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    XR + Gaussian Splatting
+    XR + Holoviz
     
   </span>
   
@@ -8834,7 +8711,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_71_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_71">
             <span class="md-nav__icon md-icon"></span>
-            XR + Gaussian Splatting
+            XR + Holoviz
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8876,66 +8753,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../xr_holoviz/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    XR + Holoviz
-    
-  </span>
-  
-
-            </a>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_72_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_72">
-            <span class="md-nav__icon md-icon"></span>
-            XR + Holoviz
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_73" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../yolo_model_deployment/" class="md-nav__link ">
+            <a href="../../../applications/yolo_model_deployment/" class="md-nav__link ">
               
   
   
@@ -8949,8 +8767,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_73_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_73">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_72_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_72">
             <span class="md-nav__icon md-icon"></span>
             Yolo Object Detection
           </label>
@@ -8977,6 +8795,8 @@
       
   
   
+    
+  
   
   
     
@@ -9080,18 +8900,21 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -9104,13 +8927,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Operators
@@ -9147,7 +8970,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/advanced_network/" class="md-nav__link ">
+            <a href="../../advanced_network/" class="md-nav__link ">
               
   
   
@@ -9206,7 +9029,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/aja_source/" class="md-nav__link ">
+            <a href="../../aja_source/" class="md-nav__link ">
               
   
   
@@ -9265,7 +9088,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/apriltag_detector/" class="md-nav__link ">
+            <a href="../../apriltag_detector/" class="md-nav__link ">
               
   
   
@@ -9324,7 +9147,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/basic_network/" class="md-nav__link ">
+            <a href="../../basic_network/" class="md-nav__link ">
               
   
   
@@ -9383,7 +9206,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/lstm_tensor_rt_inference/" class="md-nav__link ">
+            <a href="../../lstm_tensor_rt_inference/" class="md-nav__link ">
               
   
   
@@ -9442,7 +9265,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/cvcuda_holoscan_interop/" class="md-nav__link ">
+            <a href="../../cvcuda_holoscan_interop/" class="md-nav__link ">
               
   
   
@@ -9507,7 +9330,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/dds/" class="md-nav__link ">
+            <a href="../../dds/" class="md-nav__link ">
               
   
   
@@ -9563,7 +9386,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/dds/base/" class="md-nav__link ">
+            <a href="../../dds/base/" class="md-nav__link ">
               
   
   
@@ -9622,7 +9445,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/dds/dds_shapes_subscriber/" class="md-nav__link ">
+            <a href="../../dds/dds_shapes_subscriber/" class="md-nav__link ">
               
   
   
@@ -9681,7 +9504,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/dds/video/" class="md-nav__link ">
+            <a href="../../dds/video/" class="md-nav__link ">
               
   
   
@@ -9748,7 +9571,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/deltacast_videomaster/" class="md-nav__link ">
+            <a href="../../deltacast_videomaster/" class="md-nav__link ">
               
   
   
@@ -9852,7 +9675,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/deidentification/pixelator/" class="md-nav__link ">
+            <a href="../../deidentification/pixelator/" class="md-nav__link ">
               
   
   
@@ -9927,7 +9750,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/ehr_query_llm/" class="md-nav__link ">
+            <a href="../../ehr_query_llm/" class="md-nav__link ">
               
   
   
@@ -9983,7 +9806,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/ehr_query_llm/fhir_client_op/" class="md-nav__link ">
+            <a href="../../ehr_query_llm/fhir_client_op/" class="md-nav__link ">
               
   
   
@@ -10042,7 +9865,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/ehr_query_llm/fhir_resource_sanitizer_op/" class="md-nav__link ">
+            <a href="../../ehr_query_llm/fhir_resource_sanitizer_op/" class="md-nav__link ">
               
   
   
@@ -10101,7 +9924,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/ehr_query_llm/zero_mq_publisher_op/" class="md-nav__link ">
+            <a href="../../ehr_query_llm/zero_mq_publisher_op/" class="md-nav__link ">
               
   
   
@@ -10160,7 +9983,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/ehr_query_llm/zero_mq_subscriber_op/" class="md-nav__link ">
+            <a href="../../ehr_query_llm/zero_mq_subscriber_op/" class="md-nav__link ">
               
   
   
@@ -10227,7 +10050,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/emergent_source/" class="md-nav__link ">
+            <a href="../../emergent_source/" class="md-nav__link ">
               
   
   
@@ -10286,7 +10109,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/fft/" class="md-nav__link ">
+            <a href="../../fft/" class="md-nav__link ">
               
   
   
@@ -10345,7 +10168,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/gamma_correction/" class="md-nav__link ">
+            <a href="../../gamma_correction/" class="md-nav__link ">
               
   
   
@@ -10404,7 +10227,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/tensor_to_video_buffer/" class="md-nav__link ">
+            <a href="../../tensor_to_video_buffer/" class="md-nav__link ">
               
   
   
@@ -10463,7 +10286,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/high_rate_psd/" class="md-nav__link ">
+            <a href="../../high_rate_psd/" class="md-nav__link ">
               
   
   
@@ -10522,7 +10345,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/grpc_operators/" class="md-nav__link ">
+            <a href="../../grpc_operators/" class="md-nav__link ">
               
   
   
@@ -10581,7 +10404,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/holoscan_ros2/" class="md-nav__link ">
+            <a href="../../holoscan_ros2/" class="md-nav__link ">
               
   
   
@@ -10640,7 +10463,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/iio_controller/" class="md-nav__link ">
+            <a href="../../iio_controller/" class="md-nav__link ">
               
   
   
@@ -10699,7 +10522,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/realsense_camera/" class="md-nav__link ">
+            <a href="../../realsense_camera/" class="md-nav__link ">
               
   
   
@@ -10758,7 +10581,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/low_rate_psd/" class="md-nav__link ">
+            <a href="../../low_rate_psd/" class="md-nav__link ">
               
   
   
@@ -10845,7 +10668,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/medical_imaging/" class="md-nav__link ">
+            <a href="../../medical_imaging/" class="md-nav__link ">
               
   
   
@@ -10901,7 +10724,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/medical_imaging/clara_viz_operator/" class="md-nav__link ">
+            <a href="../../medical_imaging/clara_viz_operator/" class="md-nav__link ">
               
   
   
@@ -10960,7 +10783,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/medical_imaging/dicom_data_loader_operator/" class="md-nav__link ">
+            <a href="../../medical_imaging/dicom_data_loader_operator/" class="md-nav__link ">
               
   
   
@@ -11019,7 +10842,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/medical_imaging/dicom_encapsulated_pdf_writer_operator/" class="md-nav__link ">
+            <a href="../../medical_imaging/dicom_encapsulated_pdf_writer_operator/" class="md-nav__link ">
               
   
   
@@ -11078,7 +10901,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/medical_imaging/dicom_seg_writer_operator/" class="md-nav__link ">
+            <a href="../../medical_imaging/dicom_seg_writer_operator/" class="md-nav__link ">
               
   
   
@@ -11137,7 +10960,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/medical_imaging/dicom_series_selector_operator/" class="md-nav__link ">
+            <a href="../../medical_imaging/dicom_series_selector_operator/" class="md-nav__link ">
               
   
   
@@ -11196,7 +11019,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/medical_imaging/dicom_series_to_volume_operator/" class="md-nav__link ">
+            <a href="../../medical_imaging/dicom_series_to_volume_operator/" class="md-nav__link ">
               
   
   
@@ -11255,7 +11078,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/medical_imaging/dicom_text_sr_writer_operator/" class="md-nav__link ">
+            <a href="../../medical_imaging/dicom_text_sr_writer_operator/" class="md-nav__link ">
               
   
   
@@ -11314,7 +11137,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/medical_imaging/inference_operator/" class="md-nav__link ">
+            <a href="../../medical_imaging/inference_operator/" class="md-nav__link ">
               
   
   
@@ -11373,7 +11196,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/medical_imaging/monai_bundle_inference_operator/" class="md-nav__link ">
+            <a href="../../medical_imaging/monai_bundle_inference_operator/" class="md-nav__link ">
               
   
   
@@ -11432,7 +11255,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/medical_imaging/monai_seg_inference_operator/" class="md-nav__link ">
+            <a href="../../medical_imaging/monai_seg_inference_operator/" class="md-nav__link ">
               
   
   
@@ -11491,7 +11314,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/medical_imaging/nii_data_loader_operator/" class="md-nav__link ">
+            <a href="../../medical_imaging/nii_data_loader_operator/" class="md-nav__link ">
               
   
   
@@ -11550,7 +11373,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/medical_imaging/png_converter_operator/" class="md-nav__link ">
+            <a href="../../medical_imaging/png_converter_operator/" class="md-nav__link ">
               
   
   
@@ -11609,7 +11432,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/medical_imaging/publisher_operator/" class="md-nav__link ">
+            <a href="../../medical_imaging/publisher_operator/" class="md-nav__link ">
               
   
   
@@ -11668,7 +11491,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/medical_imaging/stl_conversion_operator/" class="md-nav__link ">
+            <a href="../../medical_imaging/stl_conversion_operator/" class="md-nav__link ">
               
   
   
@@ -11735,7 +11558,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/mesh_to_usd/" class="md-nav__link ">
+            <a href="../../mesh_to_usd/" class="md-nav__link ">
               
   
   
@@ -11794,7 +11617,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/npp_filter/" class="md-nav__link ">
+            <a href="../../npp_filter/" class="md-nav__link ">
               
   
   
@@ -11853,7 +11676,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/nvidia_video_codec/" class="md-nav__link ">
+            <a href="../../nvidia_video_codec/" class="md-nav__link ">
               
   
   
@@ -11912,7 +11735,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/openigtlink/" class="md-nav__link ">
+            <a href="../../openigtlink/" class="md-nav__link ">
               
   
   
@@ -11971,7 +11794,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/xr/" class="md-nav__link ">
+            <a href="../../xr/" class="md-nav__link ">
               
   
   
@@ -12030,7 +11853,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/orsi/" class="md-nav__link ">
+            <a href="../../orsi/" class="md-nav__link ">
               
   
   
@@ -12089,7 +11912,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/prohawk_video_processing/" class="md-nav__link ">
+            <a href="../../prohawk_video_processing/" class="md-nav__link ">
               
   
   
@@ -12148,7 +11971,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/qt_video/" class="md-nav__link ">
+            <a href="../../qt_video/" class="md-nav__link ">
               
   
   
@@ -12207,7 +12030,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/slang_shader/" class="md-nav__link ">
+            <a href="../../slang_shader/" class="md-nav__link ">
               
   
   
@@ -12266,7 +12089,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/streaming_server/" class="md-nav__link ">
+            <a href="../../streaming_server/" class="md-nav__link ">
               
   
   
@@ -12325,7 +12148,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/streaming_client/" class="md-nav__link ">
+            <a href="../../streaming_client/" class="md-nav__link ">
               
   
   
@@ -12384,7 +12207,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/tensor_to_file/" class="md-nav__link ">
+            <a href="../../tensor_to_file/" class="md-nav__link ">
               
   
   
@@ -12443,7 +12266,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/tool_tracking_postprocessor/" class="md-nav__link ">
+            <a href="../../tool_tracking_postprocessor/" class="md-nav__link ">
               
   
   
@@ -12502,7 +12325,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/unzip/" class="md-nav__link ">
+            <a href="../../unzip/" class="md-nav__link ">
               
   
   
@@ -12606,7 +12429,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/velodyne_lidar/cpp/" class="md-nav__link ">
+            <a href="../../velodyne_lidar/cpp/" class="md-nav__link ">
               
   
   
@@ -12673,7 +12496,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/vita49_psd_packetizer/" class="md-nav__link ">
+            <a href="../../vita49_psd_packetizer/" class="md-nav__link ">
               
   
   
@@ -12777,7 +12600,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/video_encoder/video_encoder_request/" class="md-nav__link ">
+            <a href="../../video_encoder/video_encoder_request/" class="md-nav__link ">
               
   
   
@@ -12820,6 +12643,8 @@
                 
   
   
+    
+  
   
   
     
@@ -12840,15 +12665,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_40" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_40" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/video_streaming/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -12867,7 +12692,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_40_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_40_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_40">
             <span class="md-nav__icon md-icon"></span>
             Video Streaming
@@ -12904,7 +12729,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/video_streaming/streaming_server_enhanced/" class="md-nav__link ">
+            <a href="../video_streaming_server/" class="md-nav__link ">
               
   
   
@@ -12939,6 +12764,8 @@
                 
   
   
+    
+  
   
   
     
@@ -12955,15 +12782,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_40_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_40_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/video_streaming/streaming_client_enhanced/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -12977,7 +12804,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_40_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_40_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_40_3">
             <span class="md-nav__icon md-icon"></span>
             StreamingClient
@@ -13030,7 +12857,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/volume_loader/" class="md-nav__link ">
+            <a href="../../volume_loader/" class="md-nav__link ">
               
   
   
@@ -13089,7 +12916,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/volume_renderer/" class="md-nav__link ">
+            <a href="../../volume_renderer/" class="md-nav__link ">
               
   
   
@@ -13148,7 +12975,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/vtk_renderer/" class="md-nav__link ">
+            <a href="../../vtk_renderer/" class="md-nav__link ">
               
   
   
@@ -13207,7 +13034,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/webrtc_client/" class="md-nav__link ">
+            <a href="../../webrtc_client/" class="md-nav__link ">
               
   
   
@@ -13266,7 +13093,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/webrtc_server/" class="md-nav__link ">
+            <a href="../../webrtc_server/" class="md-nav__link ">
               
   
   
@@ -13325,7 +13152,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../operators/yuan_qcap/" class="md-nav__link ">
+            <a href="../../yuan_qcap/" class="md-nav__link ">
               
   
   
@@ -13425,7 +13252,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/" class="md-nav__link ">
+            <a href="../../../tutorials/" class="md-nav__link ">
               
   
   
@@ -13481,7 +13308,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/async_buffer_deadline/" class="md-nav__link ">
+            <a href="../../../tutorials/async_buffer_deadline/" class="md-nav__link ">
               
   
   
@@ -13540,7 +13367,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/gui_for_python_applications/" class="md-nav__link ">
+            <a href="../../../tutorials/gui_for_python_applications/" class="md-nav__link ">
               
   
   
@@ -13599,7 +13426,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/integrate_external_libs_into_pipeline/" class="md-nav__link ">
+            <a href="../../../tutorials/integrate_external_libs_into_pipeline/" class="md-nav__link ">
               
   
   
@@ -13658,7 +13485,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/creating-multi-node-applications/" class="md-nav__link ">
+            <a href="../../../tutorials/creating-multi-node-applications/" class="md-nav__link ">
               
   
   
@@ -13717,7 +13544,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/cuda_mps/" class="md-nav__link ">
+            <a href="../../../tutorials/cuda_mps/" class="md-nav__link ">
               
   
   
@@ -13823,7 +13650,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/debugging/holoscan_container_vscode/" class="md-nav__link ">
+            <a href="../../../tutorials/debugging/holoscan_container_vscode/" class="md-nav__link ">
               
   
   
@@ -13882,7 +13709,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/debugging/cli_debugging/" class="md-nav__link ">
+            <a href="../../../tutorials/debugging/cli_debugging/" class="md-nav__link ">
               
   
   
@@ -13949,7 +13776,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/local-llama/" class="md-nav__link ">
+            <a href="../../../tutorials/local-llama/" class="md-nav__link ">
               
   
   
@@ -14010,7 +13837,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/high_performance_networking/" class="md-nav__link ">
+            <a href="../../../tutorials/high_performance_networking/" class="md-nav__link ">
               
   
   
@@ -14045,7 +13872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/high_performance_networking/0.1/" class="md-nav__link">
+      <a href="../../../tutorials/high_performance_networking/0.1/" class="md-nav__link">
         
   
   
@@ -14097,7 +13924,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/holoscan-playground-on-aws/" class="md-nav__link ">
+            <a href="../../../tutorials/holoscan-playground-on-aws/" class="md-nav__link ">
               
   
   
@@ -14156,7 +13983,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/holoscan_response_time_analysis/" class="md-nav__link ">
+            <a href="../../../tutorials/holoscan_response_time_analysis/" class="md-nav__link ">
               
   
   
@@ -14215,7 +14042,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/windows_vm/" class="md-nav__link ">
+            <a href="../../../tutorials/windows_vm/" class="md-nav__link ">
               
   
   
@@ -14274,7 +14101,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/holoscan-bootcamp/" class="md-nav__link ">
+            <a href="../../../tutorials/holoscan-bootcamp/" class="md-nav__link ">
               
   
   
@@ -14378,7 +14205,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/pretrained_foundational_models/self_supervised_training/" class="md-nav__link ">
+            <a href="../../../tutorials/pretrained_foundational_models/self_supervised_training/" class="md-nav__link ">
               
   
   
@@ -14445,7 +14272,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/dicom_to_usd_with_monai_and_holoscan/" class="md-nav__link ">
+            <a href="../../../tutorials/dicom_to_usd_with_monai_and_holoscan/" class="md-nav__link ">
               
   
   
@@ -14504,7 +14331,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/cloudxr_runtime_for_xr_applications/" class="md-nav__link ">
+            <a href="../../../tutorials/cloudxr_runtime_for_xr_applications/" class="md-nav__link ">
               
   
   
@@ -14563,7 +14390,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/gpu_direct_storage_on_holoscan/" class="md-nav__link ">
+            <a href="../../../tutorials/gpu_direct_storage_on_holoscan/" class="md-nav__link ">
               
   
   
@@ -14622,7 +14449,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutorials/holohub_operators_external_applications/" class="md-nav__link ">
+            <a href="../../../tutorials/holohub_operators_external_applications/" class="md-nav__link ">
               
   
   
@@ -14683,6 +14510,8 @@
       
         
       
+        
+      
     
     
     
@@ -14698,7 +14527,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../benchmarks/" class="md-nav__link ">
+            <a href="../../../benchmarks/" class="md-nav__link ">
               
   
   
@@ -14754,7 +14583,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../benchmarks/model_benchmarking/" class="md-nav__link ">
+            <a href="../../../benchmarks/model_benchmarking/" class="md-nav__link ">
               
   
   
@@ -14813,7 +14642,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../benchmarks/exclusive_display/" class="md-nav__link ">
+            <a href="../../../benchmarks/exclusive_display/" class="md-nav__link ">
               
   
   
@@ -14872,12 +14701,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../benchmarks/holoscan_flow_benchmarking/" class="md-nav__link ">
+            <a href="../../../benchmarks/green_context_benchmarking/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    Holoscan Flow Benchmarking for HoloHub
+    Green Context CUDA Kernel Launch-Start Time Benchmark
     
   </span>
   
@@ -14889,7 +14718,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_4">
             <span class="md-nav__icon md-icon"></span>
-            Holoscan Flow Benchmarking for HoloHub
+            Green Context CUDA Kernel Launch-Start Time Benchmark
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -14931,12 +14760,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../benchmarks/realtime_threads_benchmarking/" class="md-nav__link ">
+            <a href="../../../benchmarks/holoscan_flow_benchmarking/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    Real-time Thread Scheduling Benchmark
+    Holoscan Flow Benchmarking for HoloHub
     
   </span>
   
@@ -14948,7 +14777,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_5">
             <span class="md-nav__icon md-icon"></span>
-            Real-time Thread Scheduling Benchmark
+            Holoscan Flow Benchmarking for HoloHub
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -14990,7 +14819,66 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../benchmarks/release_benchmarking/" class="md-nav__link ">
+            <a href="../../../benchmarks/realtime_threads_benchmarking/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Real-time Thread Scheduling Benchmark
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            Real-time Thread Scheduling Benchmark
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../benchmarks/release_benchmarking/" class="md-nav__link ">
               
   
   
@@ -15004,8 +14892,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_7">
             <span class="md-nav__icon md-icon"></span>
             Release Benchmarking Guide
           </label>
@@ -15057,37 +14945,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#architecture-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Architecture Overview
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Requirements
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Requirements">
+    <nav class="md-nav" aria-label="Architecture Overview">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#client-dependencies" class="md-nav__link">
+  <a href="#component-interactions" class="md-nav__link">
     <span class="md-ellipsis">
-      Client Dependencies
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#server-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      Server Dependencies
+      Component Interactions
     </span>
   </a>
   
@@ -15099,68 +14969,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#running-the-applications" class="md-nav__link">
+  <a href="#requirements-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Running the Applications
+      Requirements &amp; Setup
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Running the Applications">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-start-the-streaming-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Start the Streaming Server
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-start-the-streaming-client-in-another-terminal" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Start the Streaming Client (in another terminal)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#command-line-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      Command Line Options
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Command Line Options">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#server-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      Server Options
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#client-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      Client Options
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -15184,9 +14997,42 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#recommended-resolution-settings" class="md-nav__link">
+  <a href="#configuring-camera-resolution" class="md-nav__link">
     <span class="md-ellipsis">
-      Recommended Resolution Settings
+      Configuring Camera Resolution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring Camera Resolution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-video_streaming_client" class="md-nav__link">
+    <span class="md-ellipsis">
+      For video_streaming_client
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-settings-by-camera-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended Settings by Camera Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-camera-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting Camera Issues
     </span>
   </a>
   
@@ -15198,28 +15044,106 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#video-source-modes" class="md-nav__link">
+  <a href="#framesaver-utility-class" class="md-nav__link">
     <span class="md-ellipsis">
-      Video Source Modes
+      FrameSaver Utility Class
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Video Source Modes">
+    <nav class="md-nav" aria-label="FrameSaver Utility Class">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#v4l2-camera-mode-vs-video-replayer-mode" class="md-nav__link">
+  <a href="#features" class="md-nav__link">
     <span class="md-ellipsis">
-      V4L2 Camera Mode vs Video Replayer Mode
+      Features
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#switching-between-modes" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Switching Between Modes
+      Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugging-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debugging Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Output
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-the-framesaver" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building the FrameSaver
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
     </span>
   </a>
   
@@ -15231,294 +15155,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
+  <a href="#python-bindings-applications" class="md-nav__link">
     <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#camera-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      Camera Issues
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#performance-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      Performance Issues
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#connection-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      Connection Issues
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#video-replayer-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      Video Replayer Issues
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#expected-behavior-and-logs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Expected Behavior and Logs
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#integration-testing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integration Testing
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Integration Testing">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#integration-test-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integration Test Overview
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#running-integration-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Running Integration Tests
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Running Integration Tests">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-1-using-integration-test-script" class="md-nav__link">
-    <span class="md-ellipsis">
-      Option 1: Using Integration Test Script
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-2-using-holohub-cli" class="md-nav__link">
-    <span class="md-ellipsis">
-      Option 2: Using HoloHub CLI
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integration-test-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integration Test Process
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Integration Test Process">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-pre-test-setup-10-20-seconds" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Pre-Test Setup (10-20 seconds)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-docker-build-test-execution-2-4-minutes" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Docker Build &amp; Test Execution (2-4 minutes)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-integration-test-execution-44-seconds" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Integration Test Execution (44 seconds)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-post-test-analysis-5-seconds" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Post-Test Analysis (5 seconds)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#success-criteria" class="md-nav__link">
-    <span class="md-ellipsis">
-      Success Criteria
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Success Criteria">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#server-log-verification-criteria-6-checks-required" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Server Log Verification Criteria (6 checks required)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#client-log-verification-criteria-4-checks-required" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Client Log Verification Criteria (4 checks required)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#overall-test-success" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Overall Test Success
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#expected-output" class="md-nav__link">
-    <span class="md-ellipsis">
-      Expected Output
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Expected Output">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#console-output-successful-test" class="md-nav__link">
-    <span class="md-ellipsis">
-      Console Output (Successful Test)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-log-patterns-to-look-for" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Log Patterns to Look For
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integration-test-log-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integration Test Log File
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#troubleshooting-integration-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting Integration Tests
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting Integration Tests">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#common-issues-and-solutions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Issues and Solutions
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#operator-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operator Documentation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#performance-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Performance Notes
+      Python Bindings &amp; Applications
     </span>
   </a>
   
@@ -15543,650 +15182,323 @@
       
       
       
-        <a href="../../tags/#tag:bidirectional" class="md-tag">Bidirectional</a>
+        <a href="../../../tags/#tag:client" class="md-tag">Client</a>
       
     
       
       
       
-        <a href="../../tags/#tag:client" class="md-tag">Client</a>
+        <a href="../../../tags/#tag:cloud" class="md-tag">Cloud</a>
       
     
       
       
       
-        <a href="../../tags/#tag:demo" class="md-tag">Demo</a>
+        <a href="../../../tags/#tag:networking" class="md-tag">Networking</a>
       
     
       
       
       
-        <a href="../../tags/#tag:server" class="md-tag">Server</a>
+        <a href="../../../tags/#tag:streaming" class="md-tag">Streaming</a>
       
     
       
       
       
-        <a href="../../tags/#tag:streaming" class="md-tag">Streaming</a>
-      
-    
-      
-      
-      
-        <a href="../../tags/#tag:video" class="md-tag">Video</a>
+        <a href="../../../tags/#tag:video" class="md-tag">Video</a>
       
     
   </nav>
 
 
 
-<h1 id="video-streaming-demo-enhanced"><a href="https://github.com/nvidia-holoscan/holohub/blob/main/applications/video_streaming_demo_enhanced">Video Streaming Demo Enhanced</a><a class="headerlink" href="#video-streaming-demo-enhanced" title="Permanent link">#</a></h1>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.5a5.5 5.5 0 0 1 3.096 10.047 9.005 9.005 0 0 1 5.9 8.181.75.75 0 1 1-1.499.044 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.5-.045 9.005 9.005 0 0 1 5.9-8.18A5.5 5.5 0 0 1 12 2.5M8 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0"/></svg></span> <strong>Authors:</strong> Holoscan Team (NVIDIA)<br><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.954 17H2.75A1.75 1.75 0 0 1 1 15.25V3.75C1 2.784 1.784 2 2.75 2h18.5c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0 1 21.25 17h-6.204c.171 1.375.805 2.652 1.769 3.757A.752.752 0 0 1 16.25 22h-8.5a.75.75 0 0 1-.565-1.243c.964-1.105 1.598-2.382 1.769-3.757M21.5 3.75a.25.25 0 0 0-.25-.25H2.75a.25.25 0 0 0-.25.25v11.5c0 .138.112.25.25.25h18.5a.25.25 0 0 0 .25-.25ZM13.537 17h-3.074c-.126 1.266-.564 2.445-1.223 3.5h5.52c-.659-1.055-1.098-2.234-1.223-3.5"/></svg></span> <strong>Supported platforms:</strong> x86_64, aarch64<br><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.3 8.24a.75.75 0 0 1-.04 1.06L7.352 12l2.908 2.7a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 0 1 1.06.04m3.44 1.06a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.908-2.7z"/><path d="M2 3.75C2 2.784 2.784 2 3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 20.25 22H3.75A1.75 1.75 0 0 1 2 20.25Zm1.75-.25a.25.25 0 0 0-.25.25v16.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25Z"/></svg></span> <strong>Language:</strong> C++<br><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1M2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12"/></svg></span> <strong>Last modified:</strong> October 16, 2025<br><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5"/><path d="M2.5 1h8.44a1.5 1.5 0 0 1 1.06.44l10.25 10.25a1.5 1.5 0 0 1 0 2.12l-8.44 8.44a1.5 1.5 0 0 1-2.12 0L1.44 12A1.5 1.5 0 0 1 1 10.94V2.5A1.5 1.5 0 0 1 2.5 1m0 1.5v8.44l10.25 10.25 8.44-8.44L10.94 2.5Z"/></svg></span> <strong>Latest version:</strong> 3.5.0<br><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.063 1.456a1.75 1.75 0 0 1 1.874 0l8.383 5.316a1.75 1.75 0 0 1 0 2.956l-8.383 5.316a1.75 1.75 0 0 1-1.874 0L2.68 9.728a1.75 1.75 0 0 1 0-2.956Zm1.071 1.267a.25.25 0 0 0-.268 0L3.483 8.039a.25.25 0 0 0 0 .422l8.383 5.316a.25.25 0 0 0 .268 0l8.383-5.316a.25.25 0 0 0 0-.422Z"/><path d="M1.867 12.324a.75.75 0 0 1 1.035-.232l8.964 5.685a.25.25 0 0 0 .268 0l8.964-5.685a.75.75 0 0 1 .804 1.267l-8.965 5.685a1.75 1.75 0 0 1-1.874 0l-8.965-5.685a.75.75 0 0 1-.231-1.035"/><path d="M1.867 16.324a.75.75 0 0 1 1.035-.232l8.964 5.685a.25.25 0 0 0 .268 0l8.964-5.685a.75.75 0 0 1 .804 1.267l-8.965 5.685a1.75 1.75 0 0 1-1.874 0l-8.965-5.685a.75.75 0 0 1-.231-1.035"/></svg></span> <strong>Minimum Holoscan SDK version:</strong> 3.5.0<br><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 8.807V3.5h-.563a.75.75 0 0 1 0-1.5h9.125a.75.75 0 0 1 0 1.5H16v5.307l5.125 9.301c.964 1.75-.302 3.892-2.299 3.892H5.174c-1.998 0-3.263-2.142-2.3-3.892ZM4.189 18.832a1.123 1.123 0 0 0 .985 1.668h13.652a1.123 1.123 0 0 0 .985-1.668L17.7 15H6.3ZM14.5 3.5h-5V9a.75.75 0 0 1-.093.362L7.127 13.5h9.746l-2.28-4.138A.75.75 0 0 1 14.5 9Z"/></svg></span> <strong>Tested Holoscan SDK versions:</strong> 3.5.0<br><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.296 1.924c.24-.656 1.168-.656 1.408 0l.717 1.958a11.25 11.25 0 0 0 6.697 6.697l1.958.717c.657.24.657 1.168 0 1.408l-1.958.717a11.25 11.25 0 0 0-6.697 6.697l-.717 1.958c-.24.657-1.168.657-1.408 0l-.717-1.958a11.25 11.25 0 0 0-6.697-6.697l-1.958-.717c-.656-.24-.656-1.168 0-1.408l1.958-.717a11.25 11.25 0 0 0 6.697-6.697z"/></svg></span> <strong>Contribution metric:</strong> Level 1 - Highly Reliable<br><br></p>
-<p>This unified application demonstrates how to use the Holoscan SDK to create both streaming client and server applications for bidirectional video communication. This demo application demonstrates bidirectional video communication between client and server with real-time visualization.</p>
-<p><img alt="Video Streaming Demo" src="https://github.com/nvidia-holoscan/holohub/blob/main/applications/video_streaming_demo_enhanced/screenshot_streaming_demo.png?raw=true" /><br />
-<em>Fig. 1: Example of surgical video streaming with bidirectional communication showing the client receiving and displaying frames from the server.</em></p>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h2>
-<p>The video streaming demo provides:</p>
+<h1 id="streamingclient-operator"><a href="https://github.com/nvidia-holoscan/holohub/blob/main/operators/video_streaming/video_streaming_client">StreamingClient Operator</a><a class="headerlink" href="#streamingclient-operator" title="Permanent link">#</a></h1>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.5a5.5 5.5 0 0 1 3.096 10.047 9.005 9.005 0 0 1 5.9 8.181.75.75 0 1 1-1.499.044 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.5-.045 9.005 9.005 0 0 1 5.9-8.18A5.5 5.5 0 0 1 12 2.5M8 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0"/></svg></span> <strong>Authors:</strong> Holoscan Team (NVIDIA)<br><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.954 17H2.75A1.75 1.75 0 0 1 1 15.25V3.75C1 2.784 1.784 2 2.75 2h18.5c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0 1 21.25 17h-6.204c.171 1.375.805 2.652 1.769 3.757A.752.752 0 0 1 16.25 22h-8.5a.75.75 0 0 1-.565-1.243c.964-1.105 1.598-2.382 1.769-3.757M21.5 3.75a.25.25 0 0 0-.25-.25H2.75a.25.25 0 0 0-.25.25v11.5c0 .138.112.25.25.25h18.5a.25.25 0 0 0 .25-.25ZM13.537 17h-3.074c-.126 1.266-.564 2.445-1.223 3.5h5.52c-.659-1.055-1.098-2.234-1.223-3.5"/></svg></span> <strong>Supported platforms:</strong> x86_64, aarch64<br><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.3 8.24a.75.75 0 0 1-.04 1.06L7.352 12l2.908 2.7a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 0 1 1.06.04m3.44 1.06a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.908-2.7z"/><path d="M2 3.75C2 2.784 2.784 2 3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 20.25 22H3.75A1.75 1.75 0 0 1 2 20.25Zm1.75-.25a.25.25 0 0 0-.25.25v16.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25Z"/></svg></span> <strong>Language:</strong> C++, Python<br><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1M2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12"/></svg></span> <strong>Last modified:</strong> November 7, 2025<br><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5"/><path d="M2.5 1h8.44a1.5 1.5 0 0 1 1.06.44l10.25 10.25a1.5 1.5 0 0 1 0 2.12l-8.44 8.44a1.5 1.5 0 0 1-2.12 0L1.44 12A1.5 1.5 0 0 1 1 10.94V2.5A1.5 1.5 0 0 1 2.5 1m0 1.5v8.44l10.25 10.25 8.44-8.44L10.94 2.5Z"/></svg></span> <strong>Latest version:</strong> 1.1.0<br><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.063 1.456a1.75 1.75 0 0 1 1.874 0l8.383 5.316a1.75 1.75 0 0 1 0 2.956l-8.383 5.316a1.75 1.75 0 0 1-1.874 0L2.68 9.728a1.75 1.75 0 0 1 0-2.956Zm1.071 1.267a.25.25 0 0 0-.268 0L3.483 8.039a.25.25 0 0 0 0 .422l8.383 5.316a.25.25 0 0 0 .268 0l8.383-5.316a.25.25 0 0 0 0-.422Z"/><path d="M1.867 12.324a.75.75 0 0 1 1.035-.232l8.964 5.685a.25.25 0 0 0 .268 0l8.964-5.685a.75.75 0 0 1 .804 1.267l-8.965 5.685a1.75 1.75 0 0 1-1.874 0l-8.965-5.685a.75.75 0 0 1-.231-1.035"/><path d="M1.867 16.324a.75.75 0 0 1 1.035-.232l8.964 5.685a.25.25 0 0 0 .268 0l8.964-5.685a.75.75 0 0 1 .804 1.267l-8.965 5.685a1.75 1.75 0 0 1-1.874 0l-8.965-5.685a.75.75 0 0 1-.231-1.035"/></svg></span> <strong>Minimum Holoscan SDK version:</strong> 3.5.0<br><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 8.807V3.5h-.563a.75.75 0 0 1 0-1.5h9.125a.75.75 0 0 1 0 1.5H16v5.307l5.125 9.301c.964 1.75-.302 3.892-2.299 3.892H5.174c-1.998 0-3.263-2.142-2.3-3.892ZM4.189 18.832a1.123 1.123 0 0 0 .985 1.668h13.652a1.123 1.123 0 0 0 .985-1.668L17.7 15H6.3ZM14.5 3.5h-5V9a.75.75 0 0 1-.093.362L7.127 13.5h9.746l-2.28-4.138A.75.75 0 0 1 14.5 9Z"/></svg></span> <strong>Tested Holoscan SDK versions:</strong> 3.5.0<br><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.296 1.924c.24-.656 1.168-.656 1.408 0l.717 1.958a11.25 11.25 0 0 0 6.697 6.697l1.958.717c.657.24.657 1.168 0 1.408l-1.958.717a11.25 11.25 0 0 0-6.697 6.697l-.717 1.958c-.24.657-1.168.657-1.408 0l-.717-1.958a11.25 11.25 0 0 0-6.697-6.697l-1.958-.717c-.656-.24-.656-1.168 0-1.408l1.958-.717a11.25 11.25 0 0 0 6.697-6.697z"/></svg></span> <strong>Contribution metric:</strong> Level 2 - Trusted<br><br></p>
+<p>The VideoStreamingClientOp class implements a Holoscan operator that provides bidirectional video streaming capabilities with the following key components:</p>
 <ul>
-<li><strong>Streaming Client</strong>: Captures video from V4L2 cameras or video files and streams to a server</li>
-<li><strong>Streaming Server</strong>: Comprehensive server architecture with three main components:</li>
-<li><strong>StreamingServerResource</strong>: Manages server connections and client lifecycle</li>
-<li><strong>StreamingServerUpstreamOp</strong>: Receives video streams from clients</li>
-<li><strong>StreamingServerDownstreamOp</strong>: Sends video frames back to clients (passthrough/echo mode)</li>
-<li><strong>Bidirectional Communication</strong>: Both sending and receiving video frames</li>
-<li><strong>Multiple Source Support</strong>: V4L2 cameras, video replay files</li>
+<li>Configuration and Initialization:</li>
+<li>Configurable parameters for frame dimensions (width, height), frame rate (fps), server connection (IP, port)</li>
+<li>Input/output ports for frame data using GXF entities</li>
+<li>Support for both sending and receiving frames through separate flags</li>
 </ul>
-<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">#</a></h2>
+<p>Frame Processing Pipeline:</p>
 <ul>
-<li>NVIDIA GPU</li>
-<li>CUDA 12.x (currently not working with CUDA 13.x)</li>
-<li>Holoscan SDK 3.5.0+</li>
-<li>V4L2 camera (optional, for live streaming)</li>
+<li>Input handling: Receives frames as GXF entities containing H.264 encoded video tensors</li>
+<li>Frame conversion: Converts input tensors to VideoFrame objects with BGRA format</li>
+<li>Memory management: Implements safe memory handling with bounds checking and zero-padding</li>
+<li>Output generation: Creates GXF entities with properly configured tensors for downstream processing</li>
 </ul>
-<h3 id="client-dependencies">Client Dependencies<a class="headerlink" href="#client-dependencies" title="Permanent link">#</a></h3>
-<p>Download the client streaming binaries from NGC:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Navigate to the client operator directory</span>
-<span class="nb">cd</span><span class="w"> </span>&lt;your_holohub_path&gt;/operators/video_streaming/streaming_client_enhanced
-
-<span class="c1"># Download using NGC CLI</span>
-ngc<span class="w"> </span>registry<span class="w"> </span>resource<span class="w"> </span>download-version<span class="w"> </span><span class="s2">&quot;nvidia/holoscan_client_cloud_streaming:0.2&quot;</span>
-unzip<span class="w"> </span>-o<span class="w"> </span>holoscan_client_cloud_streaming_v0.2/holoscan_client_cloud_streaming.zip<span class="w"> </span>-d<span class="w"> </span>holoscan_client_cloud_streaming
-
-<span class="c1"># Clean up</span>
-rm<span class="w"> </span>-rf<span class="w"> </span>holoscan_client_cloud_streaming_v0.2
-</code></pre></div>
-<h3 id="server-dependencies">Server Dependencies<a class="headerlink" href="#server-dependencies" title="Permanent link">#</a></h3>
-<p>Download the server streaming binaries from NGC:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Navigate to the server operator directory  </span>
-<span class="nb">cd</span><span class="w"> </span>&lt;your_holohub_path&gt;/operators/video_streaming/streaming_server_enhanced
-
-<span class="c1"># Download using NGC CLI</span>
-ngc<span class="w"> </span>registry<span class="w"> </span>resource<span class="w"> </span>download-version<span class="w"> </span><span class="s2">&quot;nvidia/holoscan_server_cloud_streaming:0.2&quot;</span>
-unzip<span class="w"> </span>-o<span class="w"> </span>holoscan_server_cloud_streaming_v0.2/holoscan_server_cloud_streaming.zip<span class="w"> </span>-d<span class="w"> </span>holoscan_server_cloud_streaming
-
-<span class="c1"># Clean up</span>
-rm<span class="w"> </span>-rf<span class="w"> </span>holoscan_server_cloud_streaming_v0.2
-</code></pre></div>
-<h2 id="running-the-applications">Running the Applications<a class="headerlink" href="#running-the-applications" title="Permanent link">#</a></h2>
-<p>The unified application provides both client and server applications.</p>
+<p>Streaming Protocol Implementation:</p>
+<ul>
+<li>Bidirectional streaming support through StreamingClient class</li>
+<li>Frame callback system for receiving frames</li>
+<li>Frame source system for sending frames</li>
+<li>Connection management with server including timeout handling</li>
+</ul>
 <blockquote>
-<p>[!IMPORTANT] Both client and server applications require Holoscan SDK 3.5.0. Set the SDK version environment variable before running the applications in each terminal, or use the <code>--base-img</code> option to specify the base image.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Set SDK version environment variable</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">HOLOHUB_BASE_SDK_VERSION</span><span class="o">=</span><span class="m">3</span>.5.0
-</code></pre></div>
-<p>[!NOTE] The client requires OpenSSL 3.4.0, which is installed inside the custom Dockerfile.</p>
+<p><strong>📚 Related Documentation:</strong></p>
+<ul>
+<li><strong><a href="../">Main Operators README</a></strong> - Setup, dependencies, NGC downloads, and Python examples</li>
+<li><strong><a href="../../../applications/video_streaming/video_streaming_client/">Client Application README</a></strong> - Complete client application with usage examples</li>
+<li><strong><a href="../video_streaming_server/">Server Operator README</a></strong> - Companion server operator documentation</li>
+<li><strong><a href="https://github.com/nvidia-holoscan/holohub/blob/main/applications/video_streaming/TESTING.md">Testing Documentation</a></strong> - Integration testing and verification</li>
+</ul>
 </blockquote>
-<h3 id="1-start-the-streaming-server">1. Start the Streaming Server<a class="headerlink" href="#1-start-the-streaming-server" title="Permanent link">#</a></h3>
-<div class="highlight"><pre><span></span><code>./holohub<span class="w"> </span>run<span class="w"> </span>video_streaming_demo_enhanced
+<h2 id="architecture-overview">Architecture Overview<a class="headerlink" href="#architecture-overview" title="Permanent link">#</a></h2>
+<p>The StreamingClient operator integrates with the Holoscan Client Cloud Streaming library to provide seamless video streaming capabilities:</p>
+<div class="highlight"><pre><span></span><code>┌─────────────────────────────────────────────────────────────────────────────────┐
+│                           Holoscan Application                                  │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│  ┌─────────────────┐    ┌─────────────────────────────────────────────────────┐ │
+│  │   Input Source  │    │              VideoStreamingClientOp                 │ │
+│  │                 │    │                                                     │ │
+│  │  • V4L2 Camera  │───▶│  ┌─────────────────┐    ┌─────────────────────────┐ │ │
+│  │  • Video File   │    │  │  Frame Convert  │    │    VideoFrame Object    │ │ │
+│  │  • Tensor Data  │    │  │  BGR → BGRA     │───▶│    • Width/Height       │ │ │
+│  │                 │    │  │  Validation     │    │    • Pixel Data         │ │ │
+│  └─────────────────┘    │  └─────────────────┘    │    • Format (BGRA)      │ │ │
+│                         │                         │    • Timestamp          │ │ │
+│  ┌─────────────────┐    │                         └─────────────────────────┘ │ │
+│  │  Output Sink    │◀───┤                                      │              │ │
+│  │                 │    │                                      ▼              │ │
+│  │  • HoloViz      │    │  ┌────────────────────────────────────────────────┐ │ │
+│  │  • File Writer  │    │  │         Holoscan Client Cloud Streaming        │ │ │
+│  │  • Next Op      │    │  │                                                │ │ │
+│  └─────────────────┘    │  │  ┌─────────────────┐    ┌────────────────────┐ │ │ │
+│                         │  │  │ StreamingClient │    │   Network Protocol │ │ │ │
+│                         │  │  │                 │    │                    │ │ │ │
+│                         │  │  │ • sendFrame()   │───▶│  • Cloud Streaming │ │ │ │
+│                         │  │  │ • Callbacks     │    │  • Signaling       │ │ │ │
+│                         │  │  │ • Connection    │    │  • Media Transport │ │ │ │
+│                         │  │  │   Management    │    │  • Encryption      │ │ │ │
+│                         │  │  └─────────────────┘    └────────────────────┘ │ │ │
+│                         │  │                                      │         │ │ │
+│                         │  └──────────────────────────────────────┼─────────┘ │ │
+│                         │                                         │           │ │
+│                         └─────────────────────────────────────────┼───────────┘ │
+└───────────────────────────────────────────────────────────────────┼─────────────┘
+                                                                    │
+                          ┌─────────────────────────────────────────┼─────────────┐
+                          │                    Network                            │
+                          │                                                       │
+                          │  ┌────────────────────────────────────────────────┐   │
+                          │  │              Streaming Server                  │   │
+                          │  │                                                │   │
+                          │  │  • Holoscan Server Cloud Streaming             │   │
+                          │  │  • Multi-client support                        │   │
+                          │  │  • Bidirectional communication                 │   │
+                          │  │  • Frame processing and relay                  │   │
+                          │  └────────────────────────────────────────────────┘   │
+                          └───────────────────────────────────────────────────────┘
 </code></pre></div>
-<h3 id="2-start-the-streaming-client-in-another-terminal">2. Start the Streaming Client (in another terminal)<a class="headerlink" href="#2-start-the-streaming-client-in-another-terminal" title="Permanent link">#</a></h3>
+<h3 id="component-interactions">Component Interactions<a class="headerlink" href="#component-interactions" title="Permanent link">#</a></h3>
+<ol>
+<li>
+<p><strong>Input Processing</strong>: The operator receives video frames from upstream Holoscan operators (V4L2, video replayer, etc.)</p>
+</li>
+<li>
+<p><strong>Frame Conversion</strong>: Input tensors are converted to VideoFrame objects with proper format validation and memory management</p>
+</li>
+<li>
+<p><strong>Cloud Streaming Integration</strong>: The VideoFrame is passed to the Holoscan Client Cloud Streaming library via <code>StreamingClient::sendFrame()</code></p>
+</li>
+<li>
+<p><strong>Network Transport</strong>: The cloud streaming library handles:</p>
+</li>
+<li>Protocol implementation</li>
+<li>Signaling and connection establishment</li>
+<li>Media encoding and transport</li>
+<li>
+<p>Security and encryption</p>
+</li>
+<li>
+<p><strong>Bidirectional Communication</strong>: Frames received from the server are processed through callbacks and converted back to Holoscan tensors</p>
+</li>
+<li>
+<p><strong>Output Generation</strong>: Processed frames are emitted as GXF entities for downstream operators (HoloViz, file writers, etc.)</p>
+</li>
+</ol>
+<h2 id="requirements-setup">Requirements &amp; Setup<a class="headerlink" href="#requirements-setup" title="Permanent link">#</a></h2>
+<p>For complete setup instructions including:</p>
 <ul>
-<li><strong>Option A: V4L2 Camera (Webcam)</strong>, which uses <code>streaming_client_demo.yaml</code> and captures video from webcam with 640x480 resolution.</li>
+<li>Holoscan SDK 3.5.0 or higher and CUDA 12.x requirements</li>
+<li>NGC binary downloads (client streaming binaries)</li>
+<li>Build troubleshooting</li>
 </ul>
-<div class="highlight"><pre><span></span><code>./holohub<span class="w"> </span>run<span class="w"> </span>video_streaming_demo_enhanced<span class="w"> </span>client_v4l2
-</code></pre></div>
-<ul>
-<li><strong>Option B: Video Replayer</strong>, which uses <code>streaming_client_demo_replayer.yaml</code> and replays a pre-recorded video file with 854x480 resolution.</li>
-</ul>
-<div class="highlight"><pre><span></span><code>./holohub<span class="w"> </span>run<span class="w"> </span>video_streaming_demo_enhanced<span class="w"> </span>client_replayer
-</code></pre></div>
-<h2 id="command-line-options">Command Line Options<a class="headerlink" href="#command-line-options" title="Permanent link">#</a></h2>
-<h3 id="server-options">Server Options<a class="headerlink" href="#server-options" title="Permanent link">#</a></h3>
-<ul>
-<li><code>-h, --help</code>: Show help message</li>
-<li><code>-c, --config &lt;file&gt;</code>: Configuration file path (default: streaming_server_demo.yaml)</li>
-<li><code>-d, --data &lt;directory&gt;</code>: Data directory for video files</li>
-</ul>
-<h3 id="client-options">Client Options<a class="headerlink" href="#client-options" title="Permanent link">#</a></h3>
-<ul>
-<li><code>-h, --help</code>: Show help message</li>
-<li><code>-c, --config &lt;file&gt;</code>: Configuration file path (default: streaming_client_demo.yaml)</li>
-<li><code>-d, --data &lt;directory&gt;</code>: Data directory for video files</li>
-</ul>
-<p><strong>Note:</strong> Video source type (V4L2 vs replayer) is configured in the YAML file, not via command line arguments.</p>
+<p><strong>See the <a href="../">Main Operators README</a> for detailed setup instructions.</strong></p>
 <h2 id="camera-setup-and-testing">Camera Setup and Testing<a class="headerlink" href="#camera-setup-and-testing" title="Permanent link">#</a></h2>
+<p>This section provides detailed technical camera configuration for the StreamingClient operator. For application-level camera setup and quick start instructions, see the <a href="../../../applications/video_streaming/#camera-setup-and-testing">Application README</a>.</p>
 <h3 id="testing-your-v4l2-camera">Testing Your V4L2 Camera<a class="headerlink" href="#testing-your-v4l2-camera" title="Permanent link">#</a></h3>
-<p>Before starting the streaming client with camera input:</p>
+<p>Before using the streaming client with your camera, verify it's working properly:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Check available video devices</span>
 ls<span class="w"> </span>-la<span class="w"> </span>/dev/video*
 
 <span class="c1"># Get camera information</span>
 v4l2-ctl<span class="w"> </span>--device<span class="o">=</span>/dev/video0<span class="w"> </span>--info
 
-<span class="c1"># Test camera with recommended resolution</span>
-v4l2-ctl<span class="w"> </span>--device<span class="o">=</span>/dev/video0<span class="w"> </span>--set-fmt-video<span class="o">=</span><span class="nv">width</span><span class="o">=</span><span class="m">1280</span>,height<span class="o">=</span><span class="m">720</span>,pixelformat<span class="o">=</span>MJPG<span class="w"> </span>--stream-mmap<span class="w"> </span>--stream-count<span class="o">=</span><span class="m">10</span>
-
-<span class="c1"># List supported formats</span>
+<span class="c1"># List supported formats and resolutions</span>
 v4l2-ctl<span class="w"> </span>--device<span class="o">=</span>/dev/video0<span class="w"> </span>--list-formats-ext
+
+<span class="c1"># Test camera capture (replace resolution as needed)</span>
+v4l2-ctl<span class="w"> </span>--device<span class="o">=</span>/dev/video0<span class="w"> </span>--set-fmt-video<span class="o">=</span><span class="nv">width</span><span class="o">=</span><span class="m">1280</span>,height<span class="o">=</span><span class="m">720</span>,pixelformat<span class="o">=</span>MJPG<span class="w"> </span>--stream-mmap<span class="w"> </span>--stream-count<span class="o">=</span><span class="m">10</span>
 </code></pre></div>
-<h3 id="recommended-resolution-settings">Recommended Resolution Settings<a class="headerlink" href="#recommended-resolution-settings" title="Permanent link">#</a></h3>
-<p><strong>For V4L2 cameras (like Logitech C920):</strong></p>
+<h3 id="configuring-camera-resolution">Configuring Camera Resolution<a class="headerlink" href="#configuring-camera-resolution" title="Permanent link">#</a></h3>
+<p>The streaming client applications use YAML configuration files to set camera parameters. Edit the appropriate config file:</p>
+<h4 id="for-video_streaming_client">For video_streaming_client<a class="headerlink" href="#for-video_streaming_client" title="Permanent link">#</a></h4>
+<p>Edit <code>../../../applications/video_streaming/video_streaming_client/cpp/video_streaming_client_demo.yaml</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># V4L2 camera configuration</span>
+<span class="nt">v4l2_source</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">device</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/dev/video0&quot;</span><span class="w">        </span><span class="c1"># Camera device path</span>
+<span class="w">  </span><span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1280</span><span class="w">                  </span><span class="c1"># Camera resolution width</span>
+<span class="w">  </span><span class="nt">height</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">720</span><span class="w">                  </span><span class="c1"># Camera resolution height  </span>
+<span class="w">  </span><span class="nt">frame_rate</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30</span><span class="w">               </span><span class="c1"># Camera frame rate</span>
+<span class="w">  </span><span class="nt">pixel_format</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;MJPG&quot;</span><span class="w">         </span><span class="c1"># Pixel format (MJPG recommended for higher resolutions)</span>
+<span class="w">  </span><span class="c1"># Optional camera settings:</span>
+<span class="w">  </span><span class="c1"># exposure_time: 100         # Exposure time in multiples of 100μs</span>
+<span class="w">  </span><span class="c1"># gain: 10                   # Camera gain value</span>
+</code></pre></div>
+<h3 id="recommended-settings-by-camera-type">Recommended Settings by Camera Type<a class="headerlink" href="#recommended-settings-by-camera-type" title="Permanent link">#</a></h3>
+<p><strong>For Logitech HD Pro Webcam C920:</strong></p>
 <ul>
-<li><strong>1280x720 @ 30fps</strong> - Best balance of quality and performance</li>
-<li><strong>1920x1080 @ 30fps</strong> - High quality streaming (if supported)</li>
-<li><strong>854x480 @ 30fps</strong> - Default, good for testing and lower bandwidth</li>
+<li><strong>1280x720 @ 30fps MJPG</strong> - Best balance of quality and performance</li>
+<li><strong>1920x1080 @ 30fps MJPG</strong> - High quality (higher bandwidth)</li>
+<li><strong>640x480 @ 30fps YUYV</strong> - Low bandwidth testing</li>
 </ul>
-<p><strong>Important:</strong> Ensure both client and server use matching resolution settings for optimal performance.</p>
-<h2 id="video-source-modes">Video Source Modes<a class="headerlink" href="#video-source-modes" title="Permanent link">#</a></h2>
-<h3 id="v4l2-camera-mode-vs-video-replayer-mode">V4L2 Camera Mode vs Video Replayer Mode<a class="headerlink" href="#v4l2-camera-mode-vs-video-replayer-mode" title="Permanent link">#</a></h3>
+<p><strong>General Guidelines:</strong></p>
+<ul>
+<li>Use <strong>MJPG</strong> format for resolutions above 640x480 for better performance</li>
+<li>Use <strong>YUYV</strong> format for lower resolutions or when uncompressed data is needed</li>
+<li>Start with 30 FPS and adjust based on your system performance</li>
+<li>Match the resolution between client and server applications</li>
+</ul>
+<h3 id="troubleshooting-camera-issues">Troubleshooting Camera Issues<a class="headerlink" href="#troubleshooting-camera-issues" title="Permanent link">#</a></h3>
+<p><strong>Camera not detected:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Check camera permissions</span>
+sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>video<span class="w"> </span><span class="nv">$USER</span>
+<span class="c1"># Log out and back in, then test again</span>
+</code></pre></div>
+<p><strong>Poor performance:</strong></p>
+<ul>
+<li>Try lower resolution (e.g., 640x480)</li>
+<li>Switch from YUYV to MJPG format</li>
+<li>Reduce frame rate to 15 or 24 FPS</li>
+</ul>
+<p><strong>Format not supported:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Check what formats your camera actually supports</span>
+v4l2-ctl<span class="w"> </span>--device<span class="o">=</span>/dev/video0<span class="w"> </span>--list-formats-ext<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s2">&quot;Size:|Interval:&quot;</span>
+</code></pre></div>
+<h2 id="framesaver-utility-class">FrameSaver Utility Class<a class="headerlink" href="#framesaver-utility-class" title="Permanent link">#</a></h2>
+<p>The <code>FrameSaverOp</code> is a utility operator that can save video frames to disk for debugging and analysis purposes. This operator is not integrated into the main streaming client but can be used as a standalone debugging tool.</p>
+<h3 id="features">Features<a class="headerlink" href="#features" title="Permanent link">#</a></h3>
+<ul>
+<li><strong>Frame Capture</strong>: Saves individual video frames to disk</li>
+<li><strong>Multiple Formats</strong>: Supports both raw binary (.raw) and BGR format (.bgr) output</li>
+<li><strong>GPU/CPU Support</strong>: Automatically handles frames from both GPU and CPU memory</li>
+<li><strong>Configurable Output</strong>: Customizable output directory and filename patterns</li>
+<li><strong>Data Analysis</strong>: Includes frame content analysis and logging</li>
+</ul>
+<h3 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">#</a></h3>
+<h4 id="basic-configuration">Basic Configuration<a class="headerlink" href="#basic-configuration" title="Permanent link">#</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># Add FrameSaverOp to your Holoscan application</span>
+<span class="nt">frame_saver</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">output_dir</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;debug_frames&quot;</span><span class="w">           </span><span class="c1"># Directory to save frames</span>
+<span class="w">  </span><span class="nt">base_filename</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;frame_&quot;</span><span class="w">              </span><span class="c1"># Base filename for saved frames</span>
+<span class="w">  </span><span class="nt">save_as_raw</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">                   </span><span class="c1"># false = .bgr format, true = .raw format</span>
+</code></pre></div>
+<h4 id="integration-example">Integration Example<a class="headerlink" href="#integration-example" title="Permanent link">#</a></h4>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;frame_saver.hpp&quot;</span>
+
+<span class="c1">// In your application setup</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">frame_saver</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">make_operator</span><span class="o">&lt;</span><span class="n">holoscan</span><span class="o">::</span><span class="n">ops</span><span class="o">::</span><span class="n">FrameSaverOp</span><span class="o">&gt;</span><span class="p">(</span>
+<span class="w">    </span><span class="s">&quot;frame_saver&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">holoscan</span><span class="o">::</span><span class="n">Arg</span><span class="p">(</span><span class="s">&quot;output_dir&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="s">&quot;debug_frames&quot;</span><span class="p">)),</span>
+<span class="w">    </span><span class="n">holoscan</span><span class="o">::</span><span class="n">Arg</span><span class="p">(</span><span class="s">&quot;base_filename&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="s">&quot;frame_&quot;</span><span class="p">)),</span>
+<span class="w">    </span><span class="n">holoscan</span><span class="o">::</span><span class="n">Arg</span><span class="p">(</span><span class="s">&quot;save_as_raw&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">)</span>
+<span class="p">);</span>
+
+<span class="c1">// Connect to your frame source</span>
+<span class="n">add_flow</span><span class="p">(</span><span class="n">frame_saver</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="err">&#39;</span><span class="n">input_frames</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;</span><span class="n">output_frames</span><span class="err">&#39;</span><span class="p">));</span>
+</code></pre></div>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">#</a></h4>
 <table>
 <thead>
 <tr>
-<th>Feature</th>
-<th>V4L2 Camera</th>
-<th>Video Replayer</th>
+<th>Parameter</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Config File</strong></td>
-<td><code>streaming_client_demo.yaml</code> (default)</td>
-<td><code>streaming_client_demo_replayer.yaml</code> (custom)</td>
+<td><code>output_dir</code></td>
+<td>string</td>
+<td>"output_frames"</td>
+<td>Directory where frames will be saved</td>
 </tr>
 <tr>
-<td><strong>Command</strong></td>
-<td><code>--docker-opts='-e device=/dev/video0'</code></td>
-<td><code>--run-args='-c streaming_client_demo_replayer.yaml'</code></td>
+<td><code>base_filename</code></td>
+<td>string</td>
+<td>"frame_"</td>
+<td>Base name for saved frame files</td>
 </tr>
 <tr>
-<td><strong>Source Type</strong></td>
-<td><code>source: "v4l2"</code></td>
-<td><code>source: "replayer"</code></td>
-</tr>
-<tr>
-<td><strong>Input Format</strong></td>
-<td><code>rgba8888</code> (4 channels)</td>
-<td><code>rgb888</code> (3 channels)</td>
-</tr>
-<tr>
-<td><strong>Resolution</strong></td>
-<td>640x480</td>
-<td>854x480</td>
-</tr>
-<tr>
-<td><strong>Data Source</strong></td>
-<td>Live webcam</td>
-<td>Pre-recorded surgical video</td>
-</tr>
-<tr>
-<td><strong>Use Case</strong></td>
-<td>Real-time streaming</td>
-<td>Testing, demos, development</td>
+<td><code>save_as_raw</code></td>
+<td>bool</td>
+<td>false</td>
+<td>Whether to save as raw binary (.raw) or BGR format (.bgr)</td>
 </tr>
 </tbody>
 </table>
-<h3 id="switching-between-modes">Switching Between Modes<a class="headerlink" href="#switching-between-modes" title="Permanent link">#</a></h3>
-<p>To switch between V4L2 camera and video replayer:</p>
+<h4 id="output-files">Output Files<a class="headerlink" href="#output-files" title="Permanent link">#</a></h4>
+<ul>
+<li><strong>BGR Format (.bgr)</strong>: Standard BGR pixel format, can be opened with image viewers</li>
+<li><strong>Raw Format (.raw)</strong>: Binary data, useful for debugging memory layouts</li>
+<li><strong>Naming</strong>: <code>frame_000001.bgr</code>, <code>frame_000002.bgr</code>, etc.</li>
+</ul>
+<h4 id="debugging-features">Debugging Features<a class="headerlink" href="#debugging-features" title="Permanent link">#</a></h4>
+<p>The FrameSaver includes built-in debugging features:</p>
+<ul>
+<li><strong>Content Analysis</strong>: Logs frame size, zero-pixel count, and data validity</li>
+<li><strong>Memory Handling</strong>: Automatically copies GPU frames to CPU before saving</li>
+<li><strong>Error Handling</strong>: Comprehensive error reporting for file operations</li>
+</ul>
+<h4 id="example-output">Example Output<a class="headerlink" href="#example-output" title="Permanent link">#</a></h4>
+<div class="highlight"><pre><span></span><code>Frame 0 data analysis: size=1843200, all_zeros=false, non_zero_count=95
+Saved frame 0 to debug_frames/frame_000001.bgr
+</code></pre></div>
+<h3 id="building-the-framesaver">Building the FrameSaver<a class="headerlink" href="#building-the-framesaver" title="Permanent link">#</a></h3>
+<p>To use the FrameSaver in your application, you'll need to:</p>
 <ol>
-<li><strong>Stop the current client</strong> (Ctrl+C)</li>
-<li><strong>Use the appropriate command:</strong></li>
-<li>For camera: <code>./holohub run video_streaming_demo_enhanced client_v4l2 --docker-opts='-e EnableHybridMode=1' --docker-file applications/video_streaming_demo_enhanced/Dockerfile</code></li>
-<li>For video replay: <code>./holohub run video_streaming_demo_enhanced client_replayer --docker-opts='-e EnableHybridMode=1' --docker-file applications/video_streaming_demo_enhanced/Dockerfile</code></li>
+<li><strong>Include the source files</strong> in your CMakeLists.txt:</li>
 </ol>
-<p><strong>Important:</strong> The server doesn't need to be restarted when switching client modes.</p>
-<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">#</a></h2>
-<h3 id="camera-issues">Camera Issues<a class="headerlink" href="#camera-issues" title="Permanent link">#</a></h3>
-<ul>
-<li><strong>Camera not detected:</strong></li>
-</ul>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>video<span class="w"> </span><span class="nv">$USER</span>
-<span class="c1"># Log out and back in, then test again</span>
+<div class="highlight"><pre><span></span><code><span class="nb">add_library</span><span class="p">(</span><span class="s">frame_saver</span>
+<span class="w">  </span><span class="s">frame_saver.cpp</span>
+<span class="w">  </span><span class="s">frame_saver.hpp</span>
+<span class="p">)</span>
 </code></pre></div>
-<ul>
-<li><strong>Permission denied:</strong></li>
-</ul>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">666</span><span class="w"> </span>/dev/video0
-</code></pre></div>
-<h3 id="performance-issues">Performance Issues<a class="headerlink" href="#performance-issues" title="Permanent link">#</a></h3>
-<ul>
-<li><strong>Poor streaming quality:</strong></li>
-<li>Try lower resolution (854x480 or 640x480)</li>
-<li>Reduce frame rate to 15 or 24 FPS</li>
-<li>Ensure client and server resolutions match</li>
-</ul>
-<h3 id="connection-issues">Connection Issues<a class="headerlink" href="#connection-issues" title="Permanent link">#</a></h3>
-<ul>
-<li><strong>Server not starting:</strong></li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="c1"># Check if port is already in use</span>
-netstat<span class="w"> </span>-tlnp<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="m">48010</span>
-
-<span class="c1"># Kill existing process if needed</span>
-sudo<span class="w"> </span>lsof<span class="w"> </span>-ti:48010<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>sudo<span class="w"> </span><span class="nb">kill</span><span class="w"> </span>-9
-</code></pre></div>
-<ul>
-<li><strong>Client connection timeout:</strong></li>
-<li>Verify server is running first</li>
-<li>Check firewall settings for port 48010</li>
-<li>Ensure server_ip and port match in both configurations</li>
-</ul>
-<h3 id="video-replayer-issues">Video Replayer Issues<a class="headerlink" href="#video-replayer-issues" title="Permanent link">#</a></h3>
-<ul>
-<li><strong>Config file not found:</strong></li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="c1"># Ensure the replayer config exists in build directory</span>
-cp<span class="w"> </span>applications/streaming_client_demo_enhanced/cpp/streaming_client_demo_replayer.yaml<span class="w"> </span>build/streaming_client_demo_enhanced/
-</code></pre></div>
-<ul>
-<li><strong>Format converter errors:</strong></li>
-<li><code>Invalid channel count for RGBA8888 3 != 4</code>: Video replayer outputs RGB888 (3 channels), not RGBA8888 (4 channels)</li>
-<li>
-<p>Solution: Use <code>streaming_client_demo_replayer.yaml</code> which has correct format converter settings</p>
-</li>
-<li>
-<p><strong>Resolution mismatch:</strong></p>
-</li>
-<li>Video file is 854x480, ensure all components use matching resolution</li>
-<li>Check <code>streaming_client</code>, <code>holoviz</code>, and <code>format_converter</code> settings</li>
-</ul>
-<h3 id="expected-behavior-and-logs">Expected Behavior and Logs<a class="headerlink" href="#expected-behavior-and-logs" title="Permanent link">#</a></h3>
-<p><strong>Client Application:</strong>
-The streaming client may show <code>GXF_EXCEEDING_PREALLOCATED_SIZE</code> errors during BGR→BGRA conversion. This is expected behavior as the operators handle dynamic buffer allocation internally.</p>
-<p><strong>Server Application:</strong>
-The server should display connection status and frame processing information. Look for messages about client connections and frame throughput.</p>
-<p><strong>Successful Video Replayer Logs:</strong></p>
-<div class="highlight"><pre><span></span><code>[info] Source set to: replayer
-[info] Using video replayer as source
-[info] Connection established successfully
-[info] Tensor validation passed: 480x854x3, 1229760 bytes
-[info] Frame sent successfully
-</code></pre></div>
-<h2 id="integration-testing">Integration Testing<a class="headerlink" href="#integration-testing" title="Permanent link">#</a></h2>
-<p>The video streaming demo includes integration testing to verify end-to-end functionality between client and server components.</p>
-<h3 id="integration-test-overview">Integration Test Overview<a class="headerlink" href="#integration-test-overview" title="Permanent link">#</a></h3>
-<p>The integration test validates:</p>
-<ul>
-<li><strong>Server Startup</strong>: Streaming server initializes and starts listening</li>
-<li><strong>Client Connection</strong>: Streaming client connects to server successfully  </li>
-<li><strong>Video Streaming</strong>: Bidirectional video frame transmission (client→server→client)</li>
-<li><strong>Resource Management</strong>: Proper cleanup and resource handling</li>
-<li><strong>Error Handling</strong>: Graceful handling of connection issues</li>
-</ul>
-<h3 id="running-integration-tests">Running Integration Tests<a class="headerlink" href="#running-integration-tests" title="Permanent link">#</a></h3>
-<h4 id="option-1-using-integration-test-script">Option 1: Using Integration Test Script<a class="headerlink" href="#option-1-using-integration-test-script" title="Permanent link">#</a></h4>
-<p>The integration test script (<code>integration_test.sh</code>) runs the complete end-to-end test in a Docker container with proper SDK version and dependencies.</p>
-<div class="highlight"><pre><span></span><code>./applications/video_streaming_demo_enhanced/integration_test.sh
-</code></pre></div>
-<p><strong>Test Configuration:</strong></p>
-<ul>
-<li><strong>Duration</strong>: 3-5 minutes total (includes Docker build and test execution)</li>
-<li><strong>SDK Version</strong>: Holoscan 3.5.0 (enforced via environment variable)</li>
-<li><strong>Test Duration</strong>: 30 seconds of active streaming</li>
-<li><strong>Requirements</strong>: Docker, NVIDIA GPU, committed C++ source code</li>
-<li><strong>Output</strong>: Detailed logs saved to <code>integration_test.log</code></li>
-</ul>
-<p><strong>⚠️ Important Notes:</strong></p>
 <ol>
-<li>The test runs in Docker and builds from <strong>committed source code</strong></li>
-<li>If you have local C++ changes, <strong>commit them first</strong> before running the test</li>
-<li>The test uses cached Docker layers for faster builds (unless cache is cleared)</li>
+<li><strong>Link against required libraries</strong>:</li>
 </ol>
-<h4 id="option-2-using-holohub-cli">Option 2: Using HoloHub CLI<a class="headerlink" href="#option-2-using-holohub-cli" title="Permanent link">#</a></h4>
-<div class="highlight"><pre><span></span><code><span class="c1"># From holohub root - standard HoloHub test command</span>
-./holohub<span class="w"> </span><span class="nb">test</span><span class="w"> </span>video_streaming_demo_enhanced<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--base-img<span class="o">=</span>nvcr.io/nvidia/clara-holoscan/holoscan:v3.5.0-dgpu<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--ctest-options<span class="o">=</span><span class="s2">&quot;-R video_streaming_integration_test&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">target_link_libraries</span><span class="p">(</span><span class="s">frame_saver</span>
+<span class="w">  </span><span class="s">holoscan::core</span>
+<span class="w">  </span><span class="s">CUDA::cudart</span>
+<span class="p">)</span>
 </code></pre></div>
-<p><strong>Note:</strong> Both methods run the same underlying integration test defined in <code>CMakeLists.txt</code>. The wrapper script (<code>integration_test.sh</code>) adds developer-friendly conveniences on top of the direct command.</p>
-<h3 id="integration-test-process">Integration Test Process<a class="headerlink" href="#integration-test-process" title="Permanent link">#</a></h3>
-<p>The integration test (whether run via wrapper script or direct command) follows this sequence:</p>
-<h4 id="1-pre-test-setup-10-20-seconds">1. <strong>Pre-Test Setup</strong> (10-20 seconds)<a class="headerlink" href="#1-pre-test-setup-10-20-seconds" title="Permanent link">#</a></h4>
-<div class="highlight"><pre><span></span><code><span class="c1"># Displays current git commit</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Current commit: </span><span class="k">$(</span>git<span class="w"> </span>log<span class="w"> </span>--oneline<span class="w"> </span>-1<span class="k">)</span><span class="s2">&quot;</span>
-
-<span class="c1"># Cleans Docker build cache (optional, for fresh builds)</span>
-docker<span class="w"> </span>system<span class="w"> </span>prune<span class="w"> </span>-f<span class="w"> </span>--filter<span class="w"> </span><span class="s2">&quot;label=holohub&quot;</span>
-
-<span class="c1"># Sets SDK version environment variable</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">HOLOHUB_BASE_SDK_VERSION</span><span class="o">=</span><span class="m">3</span>.5.0
-</code></pre></div>
-<h4 id="2-docker-build-test-execution-2-4-minutes">2. <strong>Docker Build &amp; Test Execution</strong> (2-4 minutes)<a class="headerlink" href="#2-docker-build-test-execution-2-4-minutes" title="Permanent link">#</a></h4>
-<div class="highlight"><pre><span></span><code><span class="c1"># Builds Docker image and runs CTest</span>
-./holohub<span class="w"> </span><span class="nb">test</span><span class="w"> </span>video_streaming_demo_enhanced<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--base-img<span class="o">=</span>nvcr.io/nvidia/clara-holoscan/holoscan:v3.5.0-dgpu<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--cmake-options<span class="o">=</span><span class="s2">&quot;-DBUILD_TESTING=ON&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--ctest-options<span class="o">=</span><span class="s2">&quot;-R video_streaming_integration_test -V&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--verbose
-</code></pre></div>
-<p><strong>What happens internally:</strong></p>
+<h3 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link">#</a></h3>
 <ul>
-<li>Builds Docker image with Holoscan SDK 3.5.0</li>
-<li>Compiles server and client C++ applications</li>
-<li>Copies configuration files to build directory</li>
-<li>Runs CTest with the integration test</li>
+<li><strong>Debugging</strong>: Save frames at specific points in your pipeline</li>
+<li><strong>Analysis</strong>: Examine frame content and format</li>
+<li><strong>Testing</strong>: Verify frame data integrity</li>
+<li><strong>Development</strong>: Visual inspection of processed frames</li>
 </ul>
-<h4 id="3-integration-test-execution-44-seconds">3. <strong>Integration Test Execution</strong> (44 seconds)<a class="headerlink" href="#3-integration-test-execution-44-seconds" title="Permanent link">#</a></h4>
-<p>The <code>video_streaming_integration_test</code> defined in CMakeLists.txt:</p>
-<ol>
-<li><strong>Server Startup</strong> (10 seconds)</li>
-<li>Launches streaming server in background: <code>streaming_server_demo_enhanced</code></li>
-<li>Uses config: <code>streaming_server_demo.yaml</code></li>
-<li>
-<p>Waits for server to initialize and stabilize</p>
-</li>
-<li>
-<p><strong>Client Connection &amp; Streaming</strong> (30 seconds)</p>
-</li>
-<li>Starts streaming client: <code>streaming_client_demo_enhanced</code></li>
-<li>Uses config: <code>streaming_client_demo_replayer.yaml</code> (video replay mode)</li>
-<li>Establishes connection to server</li>
-<li>Streams video frames bidirectionally for 30 seconds</li>
-<li>
-<p>Typically processes ~567 frames in both directions</p>
-</li>
-<li>
-<p><strong>Log Verification &amp; Cleanup</strong> (4 seconds)</p>
-</li>
-<li>Gracefully terminates client (SIGTERM/SIGKILL)</li>
-<li>Gracefully terminates server (SIGTERM/SIGKILL)</li>
-<li>Verifies server logs for all required events and frame processing</li>
-<li>Verifies client logs for successful streaming and frame transmission</li>
-<li>Reports PASS/FAIL based on comprehensive log analysis</li>
-</ol>
-<h4 id="4-post-test-analysis-5-seconds">4. <strong>Post-Test Analysis</strong> (5 seconds)<a class="headerlink" href="#4-post-test-analysis-5-seconds" title="Permanent link">#</a></h4>
-<div class="highlight"><pre><span></span><code><span class="c1"># Verifies test results from log file</span>
-<span class="k">if</span><span class="w"> </span>grep<span class="w"> </span>-q<span class="w"> </span><span class="s2">&quot;Test.*Passed\|100%.*tests passed&quot;</span><span class="w"> </span>integration_test.log<span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;✓ Integration test PASSED&quot;</span>
-<span class="w">  </span><span class="nb">exit</span><span class="w"> </span><span class="m">0</span>
-<span class="k">fi</span>
-</code></pre></div>
-<h3 id="success-criteria">Success Criteria<a class="headerlink" href="#success-criteria" title="Permanent link">#</a></h3>
-<p>The integration test <strong>PASSES</strong> when <strong>ALL 10 checks</strong> are met (6 server + 4 client):</p>
-<h4 id="server-log-verification-criteria-6-checks-required">✅ Server Log Verification Criteria (6 checks required)<a class="headerlink" href="#server-log-verification-criteria-6-checks-required" title="Permanent link">#</a></h4>
-<ol>
-<li><strong>Client Connected</strong>: <code>grep -q 'Client connected' $SERVER_LOG</code></li>
-<li>
-<p>Verifies a client successfully connected to the server</p>
-</li>
-<li>
-<p><strong>Upstream Connection Established</strong>: <code>grep -q 'Upstream connection established' $SERVER_LOG</code></p>
-</li>
-<li>
-<p>Verifies the upstream data channel (client→server) is established</p>
-</li>
-<li>
-<p><strong>Downstream Connection Established</strong>: <code>grep -q 'Downstream connection established' $SERVER_LOG</code></p>
-</li>
-<li>
-<p>Verifies the downstream data channel (server→client) is established</p>
-</li>
-<li>
-<p><strong>Upstream Frame Processing</strong>: <code>grep -q 'Processing UNIQUE frame' $SERVER_LOG</code></p>
-</li>
-<li>Verifies StreamingServerUpstreamOp received and processed frames from client</li>
-<li>
-<p>Typical: 567 unique frames in 30 seconds</p>
-</li>
-<li>
-<p><strong>Downstream Tensor Processing</strong>: <code>grep -q 'DOWNSTREAM: Processing tensor' $SERVER_LOG</code></p>
-</li>
-<li>Verifies StreamingServerDownstreamOp processed and sent tensors to client</li>
-<li>
-<p>Typical: 567 tensors in 30 seconds</p>
-</li>
-<li>
-<p><strong>Frame Processing Statistics</strong>: <code>grep -q 'Frame Processing Stats' $SERVER_LOG</code></p>
-</li>
-<li>Verifies the server logged performance statistics at shutdown</li>
-</ol>
-<h4 id="client-log-verification-criteria-4-checks-required">✅ Client Log Verification Criteria (4 checks required)<a class="headerlink" href="#client-log-verification-criteria-4-checks-required" title="Permanent link">#</a></h4>
-<ol>
-<li><strong>Frame Sending Success</strong>: <code>grep -q 'Frame sent successfully' $CLIENT_LOG</code></li>
-<li>Verifies client successfully sent frames to server</li>
-<li>
-<p>Typical: 567 frames sent in 30 seconds</p>
-</li>
-<li>
-<p><strong>Frame Reception Success</strong>: <code>grep -q 'CLIENT: Received frame' $CLIENT_LOG</code></p>
-</li>
-<li>Verifies client successfully received frames from server (bidirectional)</li>
-<li>Typical: 567 frames received in 30 seconds</li>
-<li>
-<p>Completes end-to-end bidirectional verification</p>
-</li>
-<li>
-<p><strong>Frame Validation</strong>: <code>grep -q 'Frame validation passed' $CLIENT_LOG</code></p>
-</li>
-<li>Verifies client frame validation logic is working</li>
-<li>
-<p>Logs appear every 30 frames (~1 second at 30 FPS)</p>
-</li>
-<li>
-<p><strong>Streaming Client Started</strong>: <code>grep -q 'STARTING STREAMING CLIENT' $CLIENT_LOG</code></p>
-</li>
-<li>Verifies client initialization completed successfully</li>
-</ol>
-<h4 id="overall-test-success">✅ Overall Test Success<a class="headerlink" href="#overall-test-success" title="Permanent link">#</a></h4>
-<p><strong>Test PASSES if:</strong></p>
+<h2 id="python-bindings-applications">Python Bindings &amp; Applications<a class="headerlink" href="#python-bindings-applications" title="Permanent link">#</a></h2>
+<p>For Python usage, application examples, and testing:</p>
 <ul>
-<li>Server checks: <strong>6/6 passed</strong> (required: 6)</li>
-<li>Client checks: <strong>4/4 passed</strong> (required: 4)</li>
-<li>Total: <strong>10/10 checks passed</strong></li>
-</ul>
-<p><strong>Test FAILS if:</strong></p>
-<ul>
-<li>Any check fails (server &lt; 6 or client &lt; 4)</li>
-<li>Process crashes during execution (segfault detected but test continues)</li>
-<li>Test times out (&gt; 300 seconds)</li>
-</ul>
-<h3 id="expected-output">Expected Output<a class="headerlink" href="#expected-output" title="Permanent link">#</a></h3>
-<h4 id="console-output-successful-test">Console Output (Successful Test)<a class="headerlink" href="#console-output-successful-test" title="Permanent link">#</a></h4>
-<div class="highlight"><pre><span></span><code><span class="o">===</span><span class="w"> </span>Video<span class="w"> </span>Streaming<span class="w"> </span>Demo<span class="w"> </span>Integration<span class="w"> </span><span class="nv">Test</span><span class="w"> </span><span class="o">===</span>
-This<span class="w"> </span><span class="nb">test</span><span class="w"> </span>may<span class="w"> </span>take<span class="w"> </span>up<span class="w"> </span>to<span class="w"> </span><span class="m">10</span><span class="w"> </span>minutes<span class="w"> </span>to<span class="w"> </span>complete...
-NOTE:<span class="w"> </span>Test<span class="w"> </span>runs<span class="w"> </span><span class="k">in</span><span class="w"> </span>Docker<span class="w"> </span>and<span class="w"> </span>uses<span class="w"> </span>committed<span class="w"> </span><span class="nb">source</span><span class="w"> </span>code<span class="w"> </span><span class="o">(</span>not<span class="w"> </span><span class="nb">local</span><span class="w"> </span>build<span class="o">)</span>
-
-<span class="o">[</span>Docker<span class="w"> </span>build<span class="w"> </span>output...<span class="o">]</span>
-Step<span class="w"> </span><span class="m">1</span>/15<span class="w"> </span>:<span class="w"> </span>ARG<span class="w"> </span><span class="nv">BASE_IMAGE</span><span class="o">=</span>nvcr.io/nvidia/clara-holoscan/holoscan:v3.5.0-dgpu
-<span class="o">[</span>...<span class="o">]</span>
-
-<span class="o">[</span>CTest<span class="w"> </span>output...<span class="o">]</span>
-Test<span class="w"> </span>project<span class="w"> </span>/workspace/holohub/build-video_streaming_demo_enhanced
-<span class="w">    </span>Start<span class="w"> </span><span class="m">1</span>:<span class="w"> </span>video_streaming_integration_test
-
-<span class="m">1</span>:<span class="w"> </span><span class="o">===</span><span class="w"> </span>Enhanced<span class="w"> </span>Integration<span class="w"> </span>Test<span class="w"> </span>with<span class="w"> </span>Log<span class="w"> </span><span class="nv">Verification</span><span class="w"> </span><span class="o">===</span>
-<span class="m">1</span>:<span class="w"> </span>Starting<span class="w"> </span>server<span class="w"> </span>and<span class="w"> </span>client<span class="w"> </span>with<span class="w"> </span>log<span class="w"> </span>capture...
-<span class="m">1</span>:<span class="w"> </span>Server<span class="w"> </span>log:<span class="w"> </span>/tmp/server_log.XXXXXX
-<span class="m">1</span>:<span class="w"> </span>Client<span class="w"> </span>log:<span class="w"> </span>/tmp/client_log.XXXXXX
-<span class="m">1</span>:<span class="w"> </span>Starting<span class="w"> </span>streaming<span class="w"> </span>server...
-<span class="m">1</span>:<span class="w"> </span>Waiting<span class="w"> </span><span class="k">for</span><span class="w"> </span>server<span class="w"> </span>to<span class="w"> </span>initialize...
-<span class="m">1</span>:<span class="w"> </span>✓<span class="w"> </span>Server<span class="w"> </span>process<span class="w"> </span>is<span class="w"> </span>running
-<span class="m">1</span>:<span class="w"> </span>Starting<span class="w"> </span>streaming<span class="w"> </span>client...
-<span class="m">1</span>:<span class="w"> </span>Letting<span class="w"> </span>streaming<span class="w"> </span>run<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="m">30</span><span class="w"> </span>seconds...
-<span class="m">1</span>:<span class="w"> </span>Stopping<span class="w"> </span>client...
-<span class="m">1</span>:<span class="w"> </span>Stopping<span class="w"> </span>server...
-<span class="m">1</span>:<span class="w"> </span>
-<span class="m">1</span>:<span class="w"> </span><span class="o">===</span><span class="w"> </span>Verifying<span class="w"> </span>Server<span class="w"> </span><span class="nv">Logs</span><span class="w"> </span><span class="o">===</span>
-<span class="m">1</span>:<span class="w"> </span>✓<span class="w"> </span>Server:<span class="w"> </span>Client<span class="w"> </span>connected
-<span class="m">1</span>:<span class="w"> </span>✓<span class="w"> </span>Server:<span class="w"> </span>Upstream<span class="w"> </span>connection<span class="w"> </span>established
-<span class="m">1</span>:<span class="w"> </span>✓<span class="w"> </span>Server:<span class="w"> </span>Downstream<span class="w"> </span>connection<span class="w"> </span>established
-<span class="m">1</span>:<span class="w"> </span>✓<span class="w"> </span>Server:<span class="w"> </span>StreamingServerUpstreamOp<span class="w"> </span>processed<span class="w"> </span><span class="m">568</span><span class="w"> </span>unique<span class="w"> </span>frames
-<span class="m">1</span>:<span class="w"> </span>✓<span class="w"> </span>Server:<span class="w"> </span>StreamingServerDownstreamOp<span class="w"> </span>processed<span class="w"> </span><span class="m">568</span><span class="w"> </span>tensors
-<span class="m">1</span>:<span class="w"> </span>✓<span class="w"> </span>Server:<span class="w"> </span>Frame<span class="w"> </span>processing<span class="w"> </span>statistics<span class="w"> </span>logged
-<span class="m">1</span>:<span class="w"> </span>
-<span class="m">1</span>:<span class="w"> </span><span class="o">===</span><span class="w"> </span>Verifying<span class="w"> </span>Client<span class="w"> </span><span class="nv">Logs</span><span class="w"> </span><span class="o">===</span>
-<span class="m">1</span>:<span class="w"> </span>✓<span class="w"> </span>Client:<span class="w"> </span>Sent<span class="w"> </span><span class="m">568</span><span class="w"> </span>frames<span class="w"> </span>successfully
-<span class="m">1</span>:<span class="w"> </span>✓<span class="w"> </span>Client:<span class="w"> </span>Received<span class="w"> </span><span class="m">534</span><span class="w"> </span>frames<span class="w"> </span>from<span class="w"> </span>server
-<span class="m">1</span>:<span class="w"> </span>✓<span class="w"> </span>Client:<span class="w"> </span>Frame<span class="w"> </span>validation<span class="w"> </span>passed
-<span class="m">1</span>:<span class="w"> </span>✓<span class="w"> </span>Client:<span class="w"> </span>Streaming<span class="w"> </span>client<span class="w"> </span>started
-<span class="m">1</span>:<span class="w"> </span>
-<span class="m">1</span>:<span class="w"> </span><span class="o">===</span><span class="w"> </span>Test<span class="w"> </span>Results<span class="w"> </span><span class="nv">Summary</span><span class="w"> </span><span class="o">===</span>
-<span class="m">1</span>:<span class="w"> </span>Server<span class="w"> </span>checks<span class="w"> </span>passed:<span class="w"> </span><span class="m">6</span>
-<span class="m">1</span>:<span class="w"> </span>Client<span class="w"> </span>checks<span class="w"> </span>passed:<span class="w"> </span><span class="m">4</span>
-<span class="m">1</span>:<span class="w"> </span>✓<span class="w"> </span>STREAMING<span class="w"> </span>VERIFICATION<span class="w"> </span>PASSED<span class="w"> </span>-<span class="w"> </span>All<span class="w"> </span>checks<span class="w"> </span>passed,<span class="w"> </span>frames<span class="w"> </span>transmitted!
-<span class="m">1</span>:<span class="w"> </span>✓<span class="w"> </span>Integration<span class="w"> </span><span class="nb">test</span><span class="w"> </span>PASSED
-
-<span class="m">1</span>/1<span class="w"> </span>Test<span class="w"> </span><span class="c1">#1: video_streaming_integration_test ...   Passed   44.07 sec</span>
-
-The<span class="w"> </span>following<span class="w"> </span>tests<span class="w"> </span>passed:
-<span class="w"> </span>video_streaming_integration_test
-
-<span class="m">100</span>%<span class="w"> </span>tests<span class="w"> </span>passed,<span class="w"> </span><span class="m">0</span><span class="w"> </span>tests<span class="w"> </span>failed<span class="w"> </span>out<span class="w"> </span>of<span class="w"> </span><span class="m">1</span>
-
-Total<span class="w"> </span>Test<span class="w"> </span><span class="nb">time</span><span class="w"> </span><span class="o">(</span>real<span class="o">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">44</span>.07<span class="w"> </span><span class="nv">sec</span>
-
-<span class="o">===</span><span class="w"> </span><span class="nv">VERIFICATION</span><span class="w"> </span><span class="o">===</span>
-✓<span class="w"> </span>Integration<span class="w"> </span><span class="nb">test</span><span class="w"> </span>passed<span class="w"> </span>with<span class="w"> </span>detailed<span class="w"> </span>verification
-✓<span class="w"> </span>Server<span class="w"> </span>component<span class="w"> </span>verified
-✓<span class="w"> </span>Client<span class="w"> </span>component<span class="w"> </span>verified
-✓<span class="w"> </span>Integration<span class="w"> </span><span class="nb">test</span><span class="w"> </span>PASSED
-</code></pre></div>
-<h4 id="key-log-patterns-to-look-for">Key Log Patterns to Look For<a class="headerlink" href="#key-log-patterns-to-look-for" title="Permanent link">#</a></h4>
-<p><strong>Server Success Indicators:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="go">[info] StreamingServerResource starting...</span>
-<span class="go">[info] StreamingServerUpstreamOp::start() called</span>
-<span class="go">[info] StreamingServerDownstreamOp::start() called</span>
-<span class="go">[info] ✅ UPSTREAM: Client connected successfully</span>
-<span class="go">[info] ✅ Processing UNIQUE frame: 854x480, 1639680 bytes</span>
-<span class="go">[info] ✅ DOWNSTREAM: Frame sent successfully to StreamingServerResource</span>
-</code></pre></div>
-<p><strong>Client Success Indicators:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="go">[info] Source set to: replayer</span>
-<span class="go">[info] Using video replayer as source</span>
-<span class="go">[info] StreamingClient created successfully</span>
-<span class="go">[info] Connection established successfully</span>
-<span class="go">[info] ✅ Tensor validation passed: 480x854x3, 1229760 bytes</span>
-<span class="go">[info] ✅ Frame sent successfully on attempt 1</span>
-<span class="go">[info] 🎯 CLIENT: Frame received callback triggered!</span>
-<span class="go">[info] 📥 CLIENT: Received frame #533 from server: 854x480</span>
-</code></pre></div>
-<p><strong>Performance Indicators:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="gp"># </span>Server<span class="w"> </span>processed<span class="w"> </span><span class="m">568</span><span class="w"> </span>frames<span class="w"> </span><span class="k">in</span><span class="w"> </span>both<span class="w"> </span>directions
-<span class="go">[info] ✅ Processing UNIQUE frame: 854x480, 1639680 bytes, timestamp=29938</span>
-<span class="go">[info] 📊 DOWNSTREAM: Processing tensor 568 - shape: 480x854x4, 1639680 bytes</span>
-
-<span class="gp"># </span>Client<span class="w"> </span>sent<span class="w"> </span><span class="m">568</span><span class="w"> </span>frames<span class="w"> </span>and<span class="w"> </span>received<span class="w"> </span><span class="m">534</span><span class="w"> </span>frames
-<span class="go">[info] ✅ Frame sent successfully on attempt 1</span>
-<span class="go">[info] 📥 CLIENT: Received frame #534 from server: 854x480</span>
-
-<span class="gp"># </span>Frame<span class="w"> </span>rate:<span class="w"> </span>~19<span class="w"> </span>FPS<span class="w"> </span><span class="o">(</span><span class="m">568</span><span class="w"> </span>frames<span class="w"> </span>÷<span class="w"> </span><span class="m">30</span><span class="w"> </span>seconds<span class="o">)</span>
-<span class="gp"># </span>Bidirectional<span class="w"> </span>throughput:<span class="w"> </span>~62<span class="w"> </span>MB/s<span class="w"> </span><span class="o">(</span><span class="m">1</span>.64MB<span class="w"> </span>per<span class="w"> </span>frame<span class="w"> </span>×<span class="w"> </span><span class="m">19</span><span class="w"> </span>FPS<span class="w"> </span>×<span class="w"> </span><span class="m">2</span><span class="w"> </span>directions<span class="o">)</span>
-</code></pre></div>
-<h4 id="integration-test-log-file">Integration Test Log File<a class="headerlink" href="#integration-test-log-file" title="Permanent link">#</a></h4>
-<p>The complete test execution is saved to <code>integration_test.log</code> (typically 25,000-30,000 lines). This file contains:</p>
-<ol>
-<li><strong>Docker Build Logs</strong>: Complete build output with all dependencies</li>
-<li><strong>CMake Configuration</strong>: Build configuration and test setup</li>
-<li><strong>CTest Execution</strong>: Detailed test execution with timestamps</li>
-<li><strong>Server Logs</strong>: All server application logs (initialization, frame processing, shutdown)</li>
-<li><strong>Client Logs</strong>: All client application logs (connection, streaming, frame reception)</li>
-<li><strong>Test Summary</strong>: Final PASS/FAIL status with verification details</li>
-</ol>
-<p><strong>Analyzing the log:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Check test status</span>
-grep<span class="w"> </span><span class="s2">&quot;Integration test PASSED&quot;</span><span class="w"> </span>integration_test.log
-
-<span class="c1"># Check frame counts</span>
-grep<span class="w"> </span><span class="s2">&quot;CLIENT: Received frame&quot;</span><span class="w"> </span>integration_test.log<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-5
-
-<span class="c1"># Check for errors</span>
-grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;error\|fail\|crash&quot;</span><span class="w"> </span>integration_test.log
-
-<span class="c1"># View test summary</span>
-tail<span class="w"> </span>-100<span class="w"> </span>integration_test.log
-</code></pre></div>
-<h3 id="troubleshooting-integration-tests">Troubleshooting Integration Tests<a class="headerlink" href="#troubleshooting-integration-tests" title="Permanent link">#</a></h3>
-<h4 id="common-issues-and-solutions">Common Issues and Solutions<a class="headerlink" href="#common-issues-and-solutions" title="Permanent link">#</a></h4>
-<p><strong>Test Failure: Connection Events Not Logged</strong></p>
-<p>If you see output like:</p>
-<div class="highlight"><pre><span></span><code><span class="o">===</span><span class="w"> </span>Verifying<span class="w"> </span>Server<span class="w"> </span><span class="nv">Logs</span><span class="w"> </span><span class="o">===</span>
-✗<span class="w"> </span>Server:<span class="w"> </span>Upstream<span class="w"> </span>connection<span class="w"> </span>not<span class="w"> </span>established
-✗<span class="w"> </span>Server:<span class="w"> </span>Downstream<span class="w"> </span>connection<span class="w"> </span>not<span class="w"> </span>established
-✓<span class="w"> </span>Server:<span class="w"> </span>StreamingServerUpstreamOp<span class="w"> </span>processed<span class="w"> </span><span class="m">568</span><span class="w"> </span>unique<span class="w"> </span>frames<span class="w">  </span><span class="c1"># But frames work!</span>
-✓<span class="w"> </span>Server:<span class="w"> </span>StreamingServerDownstreamOp<span class="w"> </span>processed<span class="w"> </span><span class="m">568</span><span class="w"> </span>tensors<span class="w">      </span><span class="c1"># But frames work!</span>
-
-<span class="o">===</span><span class="w"> </span>Verifying<span class="w"> </span>Client<span class="w"> </span><span class="nv">Logs</span><span class="w"> </span><span class="o">===</span>
-✓<span class="w"> </span>Client:<span class="w"> </span>Sent<span class="w"> </span><span class="m">568</span><span class="w"> </span>frames<span class="w"> </span>successfully
-✓<span class="w"> </span>Client:<span class="w"> </span>Received<span class="w"> </span><span class="m">534</span><span class="w"> </span>frames<span class="w"> </span>from<span class="w"> </span>server<span class="w">  </span><span class="c1"># Bidirectional works!</span>
-
-<span class="o">===</span><span class="w"> </span>Test<span class="w"> </span>Results<span class="w"> </span><span class="nv">Summary</span><span class="w"> </span><span class="o">===</span>
-Server<span class="w"> </span>checks<span class="w"> </span>passed:<span class="w"> </span><span class="m">4</span>
-Client<span class="w"> </span>checks<span class="w"> </span>passed:<span class="w"> </span><span class="m">4</span>
-✗<span class="w"> </span>STREAMING<span class="w"> </span>VERIFICATION<span class="w"> </span>FAILED<span class="w"> </span>-<span class="w"> </span>One<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>checks<span class="w"> </span>failed
-✗<span class="w"> </span>Integration<span class="w"> </span><span class="nb">test</span><span class="w"> </span>FAILED
-</code></pre></div>
-<p><strong>Root Cause:</strong> Event callback overwriting in StreamingServerResource</p>
-<ul>
-<li>Both upstream and downstream operators call <code>set_event_callback()</code></li>
-<li>Second call overwrites first operator's callback</li>
-<li>Only last operator receives connection events</li>
-<li><strong>Frames still work</strong> (567 processed) but events aren't logged to both operators</li>
-</ul>
-<p><strong>Solution:</strong> Use <code>add_event_listener()</code> instead of <code>set_event_callback()</code></p>
-<ul>
-<li>Fixed in commit <code>0e8a9603</code>: "Fix integration test and event listener bug"</li>
-<li>StreamingServerResource now supports multiple event listeners</li>
-<li>Both operators receive all connection events</li>
-</ul>
-<p><strong>Build Failures:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Clean build and retry</span>
-rm<span class="w"> </span>-rf<span class="w"> </span>build/
-./holohub<span class="w"> </span>build<span class="w"> </span>video_streaming_demo_enhanced<span class="w"> </span>--language<span class="w"> </span>cpp
-</code></pre></div>
-<p><strong>Server Connection Issues:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Check if port is in use</span>
-netstat<span class="w"> </span>-tlnp<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="m">48010</span>
-sudo<span class="w"> </span>lsof<span class="w"> </span>-ti:48010<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>sudo<span class="w"> </span><span class="nb">kill</span><span class="w"> </span>-9
-</code></pre></div>
-<p><strong>Client Connection Timeout:</strong></p>
-<ul>
-<li>Verify server started successfully (check server logs)</li>
-<li>Ensure firewall allows port 48010</li>
-<li>Check Docker network connectivity</li>
-</ul>
-<p><strong>Frame Transmission Issues:</strong></p>
-<ul>
-<li>Verify video data files exist: <code>/workspace/holohub/data/endoscopy/</code></li>
-<li>Check format converter settings in config files</li>
-<li>Monitor GPU memory usage</li>
-</ul>
-<p><strong>Segmentation Fault at Shutdown:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Expected behavior - test still passes if streaming worked</span>
-<span class="m">1</span>:<span class="w"> </span>Segmentation<span class="w"> </span>fault<span class="w"> </span><span class="o">(</span>core<span class="w"> </span>dumped<span class="o">)</span><span class="w"> </span>./streaming_server_demo_enhanced
-<span class="m">1</span>:<span class="w"> </span>✓<span class="w"> </span>Server:<span class="w"> </span>StreamingServerUpstreamOp<span class="w"> </span>processed<span class="w"> </span><span class="m">567</span><span class="w"> </span>unique<span class="w"> </span>frames
-<span class="m">1</span>:<span class="w"> </span>✓<span class="w"> </span>STREAMING<span class="w"> </span>VERIFICATION<span class="w"> </span>PASSED<span class="w"> </span>-<span class="w"> </span>Frames<span class="w"> </span>actually<span class="w"> </span>transmitted!
-</code></pre></div>
-<ul>
-<li>Segfault occurs during cleanup after test completes</li>
-<li>Test passes if all 9 checks passed before shutdown</li>
-<li>Does not affect streaming functionality</li>
-</ul>
-<h2 id="operator-documentation">Operator Documentation<a class="headerlink" href="#operator-documentation" title="Permanent link">#</a></h2>
-<p>For detailed information about the underlying video streaming operators used in this application, see:</p>
-<p>📋 <strong><a href="../../operators/video_streaming/">Video Streaming Operators</a></strong> - Complete operator documentation</p>
-<p>The operator documentation includes:</p>
-<ul>
-<li><strong>Client Components</strong>: StreamingClientOp, FrameSaverOp</li>
-<li><strong>Server Components</strong>: StreamingServerResource, StreamingServerUpstreamOp, StreamingServerDownstreamOp</li>
-<li><strong>Parameters and Configuration</strong>: Detailed parameter descriptions and usage examples</li>
-<li><strong>Testing Documentation</strong>: Comprehensive test suite with 40+ tests passing</li>
-<li><strong>API Reference</strong>: Complete API documentation for all components</li>
-</ul>
-<h2 id="performance-notes">Performance Notes<a class="headerlink" href="#performance-notes" title="Permanent link">#</a></h2>
-<ul>
-<li><strong>GPU Memory</strong>: Configure appropriate allocator block sizes for your resolution</li>
-<li><strong>Network Bandwidth</strong>: Monitor bandwidth usage for remote streaming scenarios  </li>
-<li><strong>Frame Rate</strong>: Higher frame rates require more GPU/CPU resources</li>
-<li><strong>Resolution</strong>: Balance between quality and performance based on your hardware</li>
+<li><strong><a href="../">Main Operators README</a></strong> - Python bindings overview and setup</li>
+<li><strong><a href="../../../applications/video_streaming/video_streaming_client/">Client Application README</a></strong> - Complete Python client implementation</li>
+<li><strong><a href="https://github.com/nvidia-holoscan/holohub/blob/main/applications/video_streaming/TESTING.md">Testing Documentation</a></strong> - Integration testing guide</li>
 </ul>
 
 
@@ -16228,7 +15540,7 @@ sudo<span class="w"> </span>lsof<span class="w"> </span>-ti:48010<span class="w"
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../psd_pipeline/data_writer/" class="md-footer__link md-footer__link--prev" aria-label="Previous: data_writer (latest)">
+          <a href="../video_streaming_server/" class="md-footer__link md-footer__link--prev" aria-label="Previous: StreamingServerOps (latest)">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -16238,20 +15550,20 @@ sudo<span class="w"> </span>lsof<span class="w"> </span>-ti:48010<span class="w"
                 Previous
               </span>
               <div class="md-ellipsis">
-                data_writer (latest)
+                StreamingServerOps (latest)
               </div>
             </div>
           </a>
         
         
           
-          <a href="video_streaming_demo_client/" class="md-footer__link md-footer__link--next" aria-label="Next: Video Streaming Demo Client Enhanced (latest)">
+          <a href="../../volume_loader/" class="md-footer__link md-footer__link--next" aria-label="Next: VolumeLoaderOp (latest)">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Video Streaming Demo Client Enhanced (latest)
+                VolumeLoaderOp (latest)
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -16303,10 +15615,12 @@ sudo<span class="w"> </span>lsof<span class="w"> </span>-ti:48010<span class="w"
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.tabs", "navigation.indexes", "navigation.path", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.tabs", "navigation.indexes", "navigation.path", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../../../assets/js/run-locally.js"></script>
       
     
   </body>

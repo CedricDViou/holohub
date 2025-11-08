@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
@@ -397,8 +397,8 @@
                 <div style="position: sticky; top: 80px; max-height: calc(100vh - 80px); overflow-y: auto; overflow-x: hidden; padding-bottom: 1rem; will-change: transform;">
                     <h4 style="font-size: 0.9rem; margin-bottom: 1rem; font-weight: 700; padding: 1rem 1rem 0 1rem;">Benchmarks</h4>
                     <nav class="sidebar-nav" data-page-type="benchmarks" style="display: flex; flex-direction: column; gap: 0;">
-                        <a href="#all" style="display: block; padding: 0.75rem 1rem; text-decoration: none; color: var(--md-default-fg-color); font-size: 0.7rem; transition: all 0.2s;" onclick="filterByTag('all'); return true;">All (5)</a>
-                        <a href="#benchmarking" style="display: block; padding: 0.75rem 1rem; text-decoration: none; color: var(--md-default-fg-color); font-size: 0.7rem; transition: all 0.2s;" onclick="filterByTag('Benchmarking'); return true;">Benchmarking (5)</a>
+                        <a href="#all" style="display: block; padding: 0.75rem 1rem; text-decoration: none; color: var(--md-default-fg-color); font-size: 0.7rem; transition: all 0.2s;" onclick="filterByTag('all'); return true;">All (6)</a>
+                        <a href="#benchmarking" style="display: block; padding: 0.75rem 1rem; text-decoration: none; color: var(--md-default-fg-color); font-size: 0.7rem; transition: all 0.2s;" onclick="filterByTag('Benchmarking'); return true;">Benchmarking (6)</a>
                         <a href="#threading" style="display: block; padding: 0.75rem 1rem; text-decoration: none; color: var(--md-default-fg-color); font-size: 0.7rem; transition: all 0.2s;" onclick="filterByTag('Threading'); return true;">Threading (1)</a>
                         <a href="#visualization" style="display: block; padding: 0.75rem 1rem; text-decoration: none; color: var(--md-default-fg-color); font-size: 0.7rem; transition: all 0.2s;" onclick="filterByTag('Visualization'); return true;">Visualization (1)</a>
                     </nav>
@@ -419,11 +419,23 @@
                     </div>
                     
             
+ <div class="col-xl-4 col-lg-6 col-sm-12 mb-1 feature-box" data-recent="true">
+                <div class="shadow padding-feature-box-item text-center d-block match-height app-card" style="cursor: pointer; position: relative;" onclick="window.location.href='/holohub/benchmarks/green_context_benchmarking';">
+                    <span class="new-badge" style="position: absolute; top: 10px; right: 10px; background-color: #76b900; color: white; padding: 0.2rem 0.5rem; border-radius: 0.25rem; font-size: 0.65rem; font-weight: 600;">New</span>
+                    <img src="/holohub/assets/images/benchmark_default.png" alt="Green Context Benchmarking" width="120" height="120">
+                    <h3 class="mb-1 mt-0" style="font-size: 0.8rem;">Green Context Benchmarking</h3>
+                    <span style="display: inline-block; background-color: var(--md-code-bg-color); color: var(--md-code-fg-color); padding: 0.2rem 0.5rem; border-radius: 0.25rem; font-size: 0.65rem; font-weight: 600; margin-bottom: 0.5rem;">cpp</span>
+                    <p class="feature-card-desc">Benchmark CUDA Green Context scheduling latency and performance with CUPTI profiling</p>
+                    <div class="md-tags md-nav__link md-typeset" style="line-height: 1.5; display: block;" onclick="event.stopPropagation();"><a href="/holohub/tags/#tag:benchmarking" class="md-tag" style="display: none;">benchmarking</a> <a href="/holohub/tags/#tag:cuda" class="md-tag" style="display: inline-block; margin: 0.1rem; font-size: 0.55rem; padding: 0.05rem 0.25rem; cursor: pointer; transition: background-color 0.2s; text-decoration: none; line-height: normal; height: auto; width: auto;" onmouseover="this.style.backgroundColor='#5a9100';" onmouseout="this.style.backgroundColor='';" onclick="event.stopPropagation();">cuda</a> <a href="/holohub/tags/#tag:green-context" class="md-tag" style="display: inline-block; margin: 0.1rem; font-size: 0.55rem; padding: 0.05rem 0.25rem; cursor: pointer; transition: background-color 0.2s; text-decoration: none; line-height: normal; height: auto; width: auto;" onmouseover="this.style.backgroundColor='#5a9100';" onmouseout="this.style.backgroundColor='';" onclick="event.stopPropagation();">green context</a> <a href="/holohub/tags/#tag:scheduling" class="md-tag" style="display: inline-block; margin: 0.1rem; font-size: 0.55rem; padding: 0.05rem 0.25rem; cursor: pointer; transition: background-color 0.2s; text-decoration: none; line-height: normal; height: auto; width: auto;" onmouseover="this.style.backgroundColor='#5a9100';" onmouseout="this.style.backgroundColor='';" onclick="event.stopPropagation();">scheduling</a> <a href="/holohub/tags/#tag:cupti" class="md-tag" style="display: inline-block; margin: 0.1rem; font-size: 0.55rem; padding: 0.05rem 0.25rem; cursor: pointer; transition: background-color 0.2s; text-decoration: none; line-height: normal; height: auto; width: auto;" onmouseover="this.style.backgroundColor='#5a9100';" onmouseout="this.style.backgroundColor='';" onclick="event.stopPropagation();">cupti</a> <a href="/holohub/tags/#tag:performance" class="md-tag" style="display: inline-block; margin: 0.1rem; font-size: 0.55rem; padding: 0.05rem 0.25rem; cursor: pointer; transition: background-color 0.2s; text-decoration: none; line-height: normal; height: auto; width: auto;" onmouseover="this.style.backgroundColor='#5a9100';" onmouseout="this.style.backgroundColor='';" onclick="event.stopPropagation();">performance</a></div>
+                    <!-- <p class="nv-teaser-text-link">Learn More <i class="fa-solid fa-angle-right"></i></p> -->
+                </div>
+            </div>
  <div class="col-xl-4 col-lg-6 col-sm-12 mb-1 feature-box">
                 <div class="shadow padding-feature-box-item text-center d-block match-height app-card" style="cursor: pointer; position: relative;" onclick="window.location.href='/holohub/benchmarks/realtime_threads_benchmarking';">
                     
                     <img src="https://raw.githubusercontent.com/nvidia-holoscan/holohub/main/benchmarks/realtime_threads_benchmarking/normal_mode.png" alt="Real-time Thread Scheduling Benchmark" width="120" height="120">
                     <h3 class="mb-1 mt-0" style="font-size: 0.8rem;">Real-time Thread Scheduling Benchmark</h3>
+                    <span style="display: inline-block; background-color: var(--md-code-bg-color); color: var(--md-code-fg-color); padding: 0.2rem 0.5rem; border-radius: 0.25rem; font-size: 0.65rem; font-weight: 600; margin-bottom: 0.5rem;">cpp</span>
                     <p class="feature-card-desc">This benchmark application demonstrates and evaluates the effectiveness of real-time thread scheduling in Holoscan ap...</p>
                     <div class="md-tags md-nav__link md-typeset" style="line-height: 1.5; display: block;" onclick="event.stopPropagation();"><a href="/holohub/tags/#tag:threading" class="md-tag" style="display: none;">threading</a> <a href="/holohub/tags/#tag:benchmarking" class="md-tag" style="display: inline-block; margin: 0.1rem; font-size: 0.55rem; padding: 0.05rem 0.25rem; cursor: pointer; transition: background-color 0.2s; text-decoration: none; line-height: normal; height: auto; width: auto;" onmouseover="this.style.backgroundColor='#5a9100';" onmouseout="this.style.backgroundColor='';" onclick="event.stopPropagation();">benchmarking</a> <a href="/holohub/tags/#tag:real-time" class="md-tag" style="display: inline-block; margin: 0.1rem; font-size: 0.55rem; padding: 0.05rem 0.25rem; cursor: pointer; transition: background-color 0.2s; text-decoration: none; line-height: normal; height: auto; width: auto;" onmouseover="this.style.backgroundColor='#5a9100';" onmouseout="this.style.backgroundColor='';" onclick="event.stopPropagation();">real-time</a> <a href="/holohub/tags/#tag:performance" class="md-tag" style="display: inline-block; margin: 0.1rem; font-size: 0.55rem; padding: 0.05rem 0.25rem; cursor: pointer; transition: background-color 0.2s; text-decoration: none; line-height: normal; height: auto; width: auto;" onmouseover="this.style.backgroundColor='#5a9100';" onmouseout="this.style.backgroundColor='';" onclick="event.stopPropagation();">performance</a></div>
                     <!-- <p class="nv-teaser-text-link">Learn More <i class="fa-solid fa-angle-right"></i></p> -->
@@ -434,6 +446,7 @@
                     
                     <img src="/holohub/assets/images/benchmark_default.png" alt="Holoscan Release Benchmarking" width="120" height="120">
                     <h3 class="mb-1 mt-0" style="font-size: 0.8rem;">Holoscan Release Benchmarking</h3>
+                    
                     <p class="feature-card-desc">Reproducible benchmarking workflow to evaluate HoloHub performance with a Holoscan SDK release.</p>
                     <div class="md-tags md-nav__link md-typeset" style="line-height: 1.5; display: block;" onclick="event.stopPropagation();"><a href="/holohub/tags/#tag:benchmarking" class="md-tag" style="display: none;">benchmarking</a> <a href="/holohub/tags/#tag:performance" class="md-tag" style="display: inline-block; margin: 0.1rem; font-size: 0.55rem; padding: 0.05rem 0.25rem; cursor: pointer; transition: background-color 0.2s; text-decoration: none; line-height: normal; height: auto; width: auto;" onmouseover="this.style.backgroundColor='#5a9100';" onmouseout="this.style.backgroundColor='';" onclick="event.stopPropagation();">performance</a></div>
                     <!-- <p class="nv-teaser-text-link">Learn More <i class="fa-solid fa-angle-right"></i></p> -->
@@ -444,6 +457,7 @@
                     
                     <img src="https://raw.githubusercontent.com/nvidia-holoscan/holohub/main/benchmarks/exclusive_display/exclusive_max_latency.png" alt="Exclusive Display Benchmark" width="120" height="120">
                     <h3 class="mb-1 mt-0" style="font-size: 0.8rem;">Exclusive Display Benchmark</h3>
+                    
                     <p class="feature-card-desc">This benchmark shows performance of exclusive display and default mode in presence of multiple headless applications.</p>
                     <div class="md-tags md-nav__link md-typeset" style="line-height: 1.5; display: block;" onclick="event.stopPropagation();"><a href="/holohub/tags/#tag:visualization" class="md-tag" style="display: none;">visualization</a> <a href="/holohub/tags/#tag:benchmarking" class="md-tag" style="display: inline-block; margin: 0.1rem; font-size: 0.55rem; padding: 0.05rem 0.25rem; cursor: pointer; transition: background-color 0.2s; text-decoration: none; line-height: normal; height: auto; width: auto;" onmouseover="this.style.backgroundColor='#5a9100';" onmouseout="this.style.backgroundColor='';" onclick="event.stopPropagation();">benchmarking</a></div>
                     <!-- <p class="nv-teaser-text-link">Learn More <i class="fa-solid fa-angle-right"></i></p> -->
@@ -454,6 +468,7 @@
                     
                     <img src="https://raw.githubusercontent.com/nvidia-holoscan/holohub/main/benchmarks/holoscan_flow_benchmarking/sample_output.png" alt="Holoscan Flow Benchmarking" width="120" height="120">
                     <h3 class="mb-1 mt-0" style="font-size: 0.8rem;">Holoscan Flow Benchmarking</h3>
+                    
                     <p class="feature-card-desc">This is a benchmarking tool to evaluate the performance of HoloHub and other Holoscan applications.</p>
                     <div class="md-tags md-nav__link md-typeset" style="line-height: 1.5; display: block;" onclick="event.stopPropagation();"><a href="/holohub/tags/#tag:benchmarking" class="md-tag" style="display: none;">benchmarking</a></div>
                     <!-- <p class="nv-teaser-text-link">Learn More <i class="fa-solid fa-angle-right"></i></p> -->
@@ -464,6 +479,7 @@
                     
                     <img src="https://raw.githubusercontent.com/nvidia-holoscan/holohub/main/benchmarks/model_benchmarking/model_benchmarking.png" alt="Model Benchmarking" width="120" height="120">
                     <h3 class="mb-1 mt-0" style="font-size: 0.8rem;">Model Benchmarking</h3>
+                    <span style="display: inline-block; background-color: var(--md-code-bg-color); color: var(--md-code-fg-color); padding: 0.2rem 0.5rem; border-radius: 0.25rem; font-size: 0.65rem; font-weight: 600; margin-bottom: 0.5rem;">Python, C++</span>
                     <p class="feature-card-desc">This application demonstrates an easy, quick and straightforward way to benchmark the scalaibility of inferencing wit...</p>
                     <div class="md-tags md-nav__link md-typeset" style="line-height: 1.5; display: block;" onclick="event.stopPropagation();"><a href="/holohub/tags/#tag:benchmarking" class="md-tag" style="display: none;">benchmarking</a></div>
                     <!-- <p class="nv-teaser-text-link">Learn More <i class="fa-solid fa-angle-right"></i></p> -->
@@ -682,8 +698,6 @@
       
         
           
-        
-      
         
       
         
@@ -8254,12 +8268,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../applications/video_streaming_demo_enhanced/" class="md-nav__link ">
+            <a href="../applications/video_streaming/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    Video Streaming Demo Enhanced
+    Video Streaming Demo
     
   </span>
   
@@ -8276,7 +8290,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_64_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_64">
             <span class="md-nav__icon md-icon"></span>
-            Video Streaming Demo Enhanced
+            Video Streaming Demo
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8310,12 +8324,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../applications/video_streaming_demo_enhanced/video_streaming_demo_client/" class="md-nav__link ">
+            <a href="../applications/video_streaming/video_streaming_client/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    Video Streaming Demo Client Enhanced
+    Video Streaming Client Demo
     
   </span>
   
@@ -8327,7 +8341,7 @@
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_64_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_64_2">
             <span class="md-nav__icon md-icon"></span>
-            Video Streaming Demo Client Enhanced
+            Video Streaming Client Demo
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8369,12 +8383,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../applications/video_streaming_demo_enhanced/video_streaming_demo_server/" class="md-nav__link ">
+            <a href="../applications/video_streaming/video_streaming_server/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    Video Streaming Demo Server Enhanced
+    Video Streaming Server Demo
     
   </span>
   
@@ -8386,7 +8400,7 @@
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_64_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_64_3">
             <span class="md-nav__icon md-icon"></span>
-            Video Streaming Demo Server Enhanced
+            Video Streaming Server Demo
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8418,7 +8432,7 @@
     
       
         
-      
+          
         
       
     
@@ -8435,142 +8449,28 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_65" >
         
           
-          <label class="md-nav__link" for="__nav_3_65" id="__nav_3_65_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../applications/volume_rendering/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
-    Video streaming
+    Volume rendering using ClaraViz
     
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_65_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_65">
             <span class="md-nav__icon md-icon"></span>
-            Video streaming
+            Volume rendering using ClaraViz
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_65_1" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../applications/video_streaming/video_streaming_client/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    Video Streaming Client
-    
-  </span>
-  
-
-            </a>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_65_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_65_1">
-            <span class="md-nav__icon md-icon"></span>
-            Video Streaming Client
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_65_2" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../applications/video_streaming/video_streaming_server/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    Video Streaming Server
-    
-  </span>
-  
-
-            </a>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_65_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_65_2">
-            <span class="md-nav__icon md-icon"></span>
-            Video Streaming Server
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
               
             
           </ul>
@@ -8609,12 +8509,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../applications/volume_rendering/" class="md-nav__link ">
+            <a href="../applications/vpi_stereo/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    Volume rendering using ClaraViz
+    VPI Stereo Vision
     
   </span>
   
@@ -8626,7 +8526,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_66_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_66">
             <span class="md-nav__icon md-icon"></span>
-            Volume rendering using ClaraViz
+            VPI Stereo Vision
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8668,12 +8568,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../applications/vpi_stereo/" class="md-nav__link ">
+            <a href="../applications/webrtc_holoviz_server/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    VPI Stereo Vision
+    WebRTC Holoviz Server
     
   </span>
   
@@ -8685,7 +8585,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_67_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_67">
             <span class="md-nav__icon md-icon"></span>
-            VPI Stereo Vision
+            WebRTC Holoviz Server
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8727,12 +8627,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../applications/webrtc_holoviz_server/" class="md-nav__link ">
+            <a href="../applications/webrtc_video_client/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    WebRTC Holoviz Server
+    WebRTC Video Client
     
   </span>
   
@@ -8744,7 +8644,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_68_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_68">
             <span class="md-nav__icon md-icon"></span>
-            WebRTC Holoviz Server
+            WebRTC Video Client
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8786,12 +8686,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../applications/webrtc_video_client/" class="md-nav__link ">
+            <a href="../applications/webrtc_video_server/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    WebRTC Video Client
+    WebRTC Video Server
     
   </span>
   
@@ -8803,7 +8703,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_69_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_69">
             <span class="md-nav__icon md-icon"></span>
-            WebRTC Video Client
+            WebRTC Video Server
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8845,12 +8745,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../applications/webrtc_video_server/" class="md-nav__link ">
+            <a href="../applications/xr_gsplat/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    WebRTC Video Server
+    XR + Gaussian Splatting
     
   </span>
   
@@ -8862,7 +8762,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_70_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_70">
             <span class="md-nav__icon md-icon"></span>
-            WebRTC Video Server
+            XR + Gaussian Splatting
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8904,12 +8804,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../applications/xr_gsplat/" class="md-nav__link ">
+            <a href="../applications/xr_holoviz/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    XR + Gaussian Splatting
+    XR + Holoviz
     
   </span>
   
@@ -8921,7 +8821,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_71_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_71">
             <span class="md-nav__icon md-icon"></span>
-            XR + Gaussian Splatting
+            XR + Holoviz
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8963,65 +8863,6 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../applications/xr_holoviz/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    XR + Holoviz
-    
-  </span>
-  
-
-            </a>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_72_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_72">
-            <span class="md-nav__icon md-icon"></span>
-            XR + Holoviz
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_73" >
-        
-          
-          <div class="md-nav__link md-nav__container">
             <a href="../applications/yolo_model_deployment/" class="md-nav__link ">
               
   
@@ -9036,8 +8877,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_73_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_73">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_72_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_72">
             <span class="md-nav__icon md-icon"></span>
             Yolo Object Detection
           </label>
@@ -12991,7 +12832,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../operators/video_streaming/streaming_server_enhanced/" class="md-nav__link ">
+            <a href="../operators/video_streaming/video_streaming_server/" class="md-nav__link ">
               
   
   
@@ -13050,7 +12891,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../operators/video_streaming/streaming_client_enhanced/" class="md-nav__link ">
+            <a href="../operators/video_streaming/video_streaming_client/" class="md-nav__link ">
               
   
   
@@ -14772,6 +14613,8 @@
       
         
       
+        
+      
     
     
     
@@ -14964,12 +14807,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="holoscan_flow_benchmarking/" class="md-nav__link ">
+            <a href="green_context_benchmarking/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    Holoscan Flow Benchmarking for HoloHub
+    Green Context CUDA Kernel Launch-Start Time Benchmark
     
   </span>
   
@@ -14981,7 +14824,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_4">
             <span class="md-nav__icon md-icon"></span>
-            Holoscan Flow Benchmarking for HoloHub
+            Green Context CUDA Kernel Launch-Start Time Benchmark
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -15023,12 +14866,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="realtime_threads_benchmarking/" class="md-nav__link ">
+            <a href="holoscan_flow_benchmarking/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    Real-time Thread Scheduling Benchmark
+    Holoscan Flow Benchmarking for HoloHub
     
   </span>
   
@@ -15040,7 +14883,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_5">
             <span class="md-nav__icon md-icon"></span>
-            Real-time Thread Scheduling Benchmark
+            Holoscan Flow Benchmarking for HoloHub
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -15082,6 +14925,65 @@
         
           
           <div class="md-nav__link md-nav__container">
+            <a href="realtime_threads_benchmarking/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Real-time Thread Scheduling Benchmark
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            Real-time Thread Scheduling Benchmark
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
             <a href="release_benchmarking/" class="md-nav__link ">
               
   
@@ -15096,8 +14998,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_7">
             <span class="md-nav__icon md-icon"></span>
             Release Benchmarking Guide
           </label>
@@ -15252,6 +15154,8 @@
     
     
       <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../assets/js/run-locally.js"></script>
       
     
   </body>
